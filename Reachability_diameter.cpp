@@ -390,7 +390,7 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 
 
 
-	std::cout << "\ntheRecurrenceDiameter: " << *(std::max_element(allShortestPathLength.begin(), allShortestPathLength.end()));
+	std::cout << "\ntheRechabilityeDiameter: " << *(std::max_element(allShortestPathLength.begin(), allShortestPathLength.end()));
 
 	return ;//*(std::max_element(allShortestPathLength.begin(), allShortestPathLength.end()));
 }
