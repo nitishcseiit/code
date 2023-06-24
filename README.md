@@ -26,7 +26,7 @@ some text
 g++ filename -lz3
 
 ## To execute 
-./a.out <graphname> <initial-state>
+./a.out graphname initial-state
 
 # An example
 
