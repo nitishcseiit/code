@@ -33,20 +33,20 @@ g++ filename -lz3
 ```
 
 ## Diameter
-###To execute 
+### To execute 
 ```SH 
 bash Diameter.cpp <graph name>
 ```
 
 
 ## Recurrence diameter
-### How to you run it?
+###  How to you run it?
 
-####To compile 
+#### To compile 
 
 g++ filename -lz3
 
-####To execute
+#### To execute
 ```SH 
 ./a.out <graph name> <initial-state>
 ```
