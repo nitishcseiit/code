@@ -12,9 +12,9 @@ theSetOfAllVertices=()
 i=0
 while IFS=" " read -r rec_column1 rec_column2
 do
-	echo "IIT Dharwad. $i"
-	echo "CSE: $rec_column1"
-	echo "SP4: $rec_column2"
+	#echo "IIT Dharwad. $i"
+	#echo "CSE: $rec_column1"
+	#echo "SP4: $rec_column2"
 	#theSetOfAAllVertiecs+=('$rec_column1')
 	#theSetOfAAllVertiecs[i]+=$i
 	#theSetOfAllVertices
@@ -63,20 +63,20 @@ do
 	echo ""
 done < $1
 
-echo -e "\nHold on: $theSetOfAllvertices[0]"
-echo -e "\nHold on: $theSetOfAllvertices[1]"
-echo -e "\nHold on: $theSetOfAllvertices[2]"
-echo -e "\nHold on: $theSetOfAllvertices[3]"
-echo -e "\nHold on: $theSetOfAllvertices[4]"
-echo -e "\nHold on: $theSetOfAllvertices[5]"
-echo -e "\nHold on: $theSetOfAllvertices[6]"
-echo -e "\nHold on: $theSetOfAllvertices[7]"
-echo -e "\nHold on: $theSetOfAllvertices[8]"
-echo -e "\nHold on: $theSetOfAllvertices[9]"
-echo -e "\nHold on: $theSetOfAllvertices[10]"
-echo -e "\nHold on: $theSetOfAllvertices[11]"
-echo -e "\nHold on: $theSetOfAllvertices[12]"
-echo -e "\nHold on: $theSetOfAllvertices[13]"
+#echo -e "\nHold on: $theSetOfAllvertices[0]"
+#echo -e "\nHold on: $theSetOfAllvertices[1]"
+#echo -e "\nHold on: $theSetOfAllvertices[2]"
+#echo -e "\nHold on: $theSetOfAllvertices[3]"
+#echo -e "\nHold on: $theSetOfAllvertices[4]"
+#echo -e "\nHold on: $theSetOfAllvertices[5]"
+#echo -e "\nHold on: $theSetOfAllvertices[6]"
+#echo -e "\nHold on: $theSetOfAllvertices[7]"
+#echo -e "\nHold on: $theSetOfAllvertices[8]"
+#echo -e "\nHold on: $theSetOfAllvertices[9]"
+#echo -e "\nHold on: $theSetOfAllvertices[10]"
+#echo -e "\nHold on: $theSetOfAllvertices[11]"
+#echo -e "\nHold on: $theSetOfAllvertices[12]"
+#echo -e "\nHold on: $theSetOfAllvertices[13]"
 
 printf '%s\n' "${theSetOfAllvertices[@]}"
 
