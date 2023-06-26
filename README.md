@@ -21,17 +21,6 @@ This indicate 0 -> 1 -> 2 -> 3
 
 
 ## Reachbility diameter
-
-
-## Diameter
-
-
-
-
-## Recurrence diameter
-
-
-
 # How to you run it?
 
 ## To compile 
@@ -42,5 +31,27 @@ g++ filename -lz3
 ```SH 
 ./a.out <graph name> <initial-state>
 ```
+
+## Diameter
+## To execute 
+```SH 
+bash Diameter.cpp <graph name>
+```
+
+
+## Recurrence diameter
+# How to you run it?
+
+## To compile 
+
+g++ filename -lz3
+
+## To execute
+```SH 
+./a.out <graph name> <initial-state>
+```
+
+
+
 # An example
 
