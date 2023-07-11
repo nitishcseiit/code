@@ -297,7 +297,8 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 
 	std::cout << "\ntotalNumberOfStates " << totalNumberOfStates;
 
-	for(j1 = 0; j1 < totalNumberOfStates; j1++) {
+//	for(j1 = 0; j1 < totalNumberOfStates; j1++) {
+        for(j1 = totalNumberOfStates - 1; j1 > 0 ; j1--) {
 		std::cout << "\n\n************************************************";
 		std::cout << "\nIn j1. Searching for state " << j1;
 

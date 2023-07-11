@@ -108,7 +108,7 @@ int main(int argc, char **argv) {
 	}
 */
 
-	std::cout << "\nPre-processing done. Z3 library starts now";
+	//std::cout << "\nPre-processing done. Z3 library starts now";
 
 	std::cout << "\nCheck theT: " << theT;
 	std::cout << "\nCheck theIorF_I: " << theIorF_I;
@@ -332,7 +332,7 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 
 				while(myFINA.size() > 0)
 					myFINA.pop_back();
-				for(j3 = 0; j3 < maxBitRequired; j3++) {//myStateFinalExprBelow
+				for(j3 = 0; j3 < maxBitRequired; j3++) {myStateFinalExprBelow
 					std::stringstream myZ_forFinalState;
 					myZ_forFinalState << "s_" << j3 << "_" << j2;
 					myFINA.push_back(myC.bool_const(myZ_forFinalState.str().c_str()));
@@ -375,7 +375,7 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 	for(std::vector<int>::iterator tw = allShortestPathLength.begin(); tw != allShortestPathLength.end(); tw++) {
 		std::cout << "\n" << *tw;
 	}
-	//std::cout << std::max_element(allShortestPathLength.begin(), allShortestPathLength.end());
+	std::cout << "\nWhat is this: " << std::max_element(allShortestPathLength.begin(), allShortestPathLength.end());
 
 	std::cout << "\n\n";
 
@@ -1107,6 +1107,6 @@ void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theI
 	return;
 }
 
-//f01_calculateReachabilityDiameter  010 -> 011
- //*/
+f01_calculateReachabilityDiameter  010 -> 011
+ */
 

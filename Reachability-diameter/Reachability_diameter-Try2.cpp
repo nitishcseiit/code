@@ -17,7 +17,7 @@ using namespace z3;
  * 0 -> 3              000 -> 011
  * 1 -> 2              001 -> 010
  * 2 -> 3            
-*/
+
 void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation, expr_vector &myX, expr_vector &myY,
 		int maxBitRequired, std::map<int, expr> myMappingFromIntToExprForVertices, std::vector<int> myVectorOfAllVertices,
 		int myStateInitial, expr_vector &myStepwiseTransitionRelation, expr_vector &xES, expr_vector &yED);
@@ -332,7 +332,7 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 
 				while(myFINA.size() > 0)
 					myFINA.pop_back();
-				for(j3 = 0; j3 < maxBitRequired; j3++) {//myStateFinalExprBelow
+				for(j3 = 0; j3 < maxBitRequired; j3++) {myStateFinalExprBelow
 					std::stringstream myZ_forFinalState;
 					myZ_forFinalState << "s_" << j3 << "_" << j2;
 					myFINA.push_back(myC.bool_const(myZ_forFinalState.str().c_str()));
@@ -1107,6 +1107,6 @@ void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theI
 	return;
 }
 
-//f01_calculateReachabilityDiameter  010 -> 011
- //*/
+f01_calculateReachabilityDiameter  010 -> 011
+ */
 

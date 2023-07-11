@@ -1,3 +1,8 @@
+//#include<bits/stdc++.h>
+#include<math.h>
+//#include <z3++.h>
+
+
 #include <iostream>
 #include <z3++.h>
 #include <fstream>
@@ -12,15 +17,9 @@
 
 using namespace z3;
 
-/*
- * 0 -> 1              000 -> 001
- * 0 -> 3              000 -> 011
- * 1 -> 2              001 -> 010
- * 2 -> 3            
-*/
 void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation, expr_vector &myX, expr_vector &myY,
 		int maxBitRequired, std::map<int, expr> myMappingFromIntToExprForVertices, std::vector<int> myVectorOfAllVertices,
-		int myStateInitial, expr_vector &myStepwiseTransitionRelation, expr_vector &xES, expr_vector &yED);
+		int myStateInitial, expr_vector &myStepwiseTransitionRelation, expr_vector &xES, expr_vector &yED, expr theTs);
 
 void f01_controlFunctionForReachability(std::string theFileName, std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, int *p3_theMaxBit,
 		std::map<int, expr> &theVertexToItsBooleanExpression, expr_vector &xES, expr_vector &yED, context *c,
@@ -39,19 +38,20 @@ void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theI
 
 
 
+using namespace z3;
 
 
-
-
-
-
-
-int main(int argc, char **argv) {
+int main(int argc, char **argv){
+	context c;
+	
+	///////////////// rajdeep start
+	
+	
 	std::vector<std::vector<int> > theInputFile_vectorOfVectors;
 	std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors;
 	int theMaxBitrequired, *p3_theMaxBit;
 	std::map<int, expr> theVertexToItsBooleanExpression;
-	context c;
+	//context c;
 	expr_vector xES(c), yED(c);
 	expr theT(c);
 	expr theIorF_I(c);
@@ -78,10 +78,7 @@ int main(int argc, char **argv) {
 	p3_theMaxBit = &theMaxBitrequired;
 
 
-	if(argc != 3) {
-		std::cout << "\nWrong format for command line argument. \n\n";
-		exit(0);
-	}
+
 	   std::stringstream ss, ss2;
 	   ss << argv[2];
 	   ss >> givenInitialState;
@@ -192,17 +189,233 @@ int main(int argc, char **argv) {
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 	f01_calculateReachabilityDiameter(c, myTransitionRelationmyCGLASS, myXGLASS, myYGLASS, maxBitRequiredGLASS, myMappingFromIntToExprForVerticesGLASS,
-			myVectorOfAllVerticesGLASS, myStateInitialGLASS,myStepwiseTransitionRelationGLASS, xES, yED);
+			myVectorOfAllVerticesGLASS, myStateInitialGLASS,myStepwiseTransitionRelationGLASS, xES, yED, theT);
 
-	//std::cout << "\ntheRecurrenceDiameter: " << theRecurrenceDiameterGLASS;
-	std::cout << "\n\n";
-	return 0;
-}
+	////////////////// rajdeeep end
+	
+	
+	expr_vector	x(c), y(c);
+
+    	int N;
+
+	expr path(c); 
+	expr loop(c);
+	 
+	solver	s(c);
+
+	//std::cout << "\n\nEnter the no. of variables:->";
+	//std::cin >> N;
+	
+	N = *p3_theMaxBit;
+	std::cout << "\n\nN: " << N;            
+
+
+
+	for(unsigned i=0; i<N; ++i){
+		std::stringstream xName;
+		xName << "x" << i;
+		x.push_back(c.bool_const(xName.str().c_str()));
+	}
+	
+	std::cout << "\n111111111111111111111\n";
+
+	for(unsigned i=0; i<N; ++i){
+		std::stringstream yName;
+		yName << "y" << i;
+		y.push_back(c.bool_const(yName.str().c_str()));
+	}
+	
+	std::cout << "\nThis is x: " << x << "\n\n";
+	std::cout << y << "\n\n";
+	//getchar();
+
+path=(!x[0]||x[0]); 
+
+/*
+      
+        expr compeq=( (x[2]==y[2]) && (x[1]==y[1]) && (x[0]==y[0]));  
+ 
+ 	//
+	//std::cout << "initial path is :" << path << "\n\n";
+        loop=(!x[0] && x[0]); 
+	//std::cout << "initial loop is :" << loop << "\n\n";
+
+ */
+ 
+ 
+        expr compeq=c.bool_val(true);//=( (x[2]==y[2]) && (x[1]==y[1]) && (x[0]==y[0]));  
+
+
+
+
+std::cout << "\n\n\n\n\n\nI need theT\n\n\n";
+
+expr T(c);
+T = theT;
+
+ 	std::cout << "\nGot theT: " << theT;
+ 	
+ 	
+ 
+	//expr I=(!x[2] && !x[1] && !x[0]); // initial state formula - 000
+	//expr I=(x[2] && !x[1] && !x[0]); // initial state formula - 100
+	//expr I=(!x[1] && x[0]); // initial state formula - 0
+ 	expr I(c);//=(x[2] && !x[1] && !x[0]); // initial state formula - 100
+ 
+	std::cout << "\nThe I: \n";
+	std::cout << theIorF_I;
+
+I = theIorF_I;
+
+
+	std::cout << "\nThe IIIIIIIIIIII: \n";
+	
+	std::cout << I;
+
+	//std::cout << "I is :" << I << "\n\n";
+	//std::cout << "T is :" << T << "\n\n";
+        //return 0;
+	//getchar();
+
+ 	expr_vector	z(c);
+	for(unsigned i=0; i<N; ++i){
+		std::stringstream zName;
+		zName << "x_0_" << i;
+		z.push_back(c.bool_const(zName.str().c_str()));
+	}
+    	
+  //      path=(!x[0] || x[0]); 
+
+//	std::cout << "initiated path is :" << path << "\n\n";
+ 
+	//return 0;  
+ 
+ 
+ 
+int k=1; 
+int max_nodes=pow(2,N);
+
+
+for (k=1;k <= max_nodes;k++){
+
+//creating path_d
+// loop for creating variables [x_k-1_0, x_k-1_1, x_k-1_2]  = s_{k-1}             
+        expr_vector	z0(c);
+	for(unsigned i=0; i<N; ++i){
+		std::stringstream z0Name;
+		z0Name << "x_" << k-1 << "_" << i;
+		z0.push_back(c.bool_const(z0Name.str().c_str()));
+	}
+// loop for creating variables [x_k_0, x_k_1, x_k_2] = s_k
+        expr_vector	z1(c);
+        
+        
+
+	for(unsigned i=0; i<N; ++i){
+		std::stringstream z1Name;
+		z1Name << "x_" << k << "_" << i;
+		z1.push_back(c.bool_const(z1Name.str().c_str()));
+	}
+          std::cout<< z1<<"\n\n"; 
+//          return 0; 
+      
+//subT is T(x,y) with x=(x0,x1,x2) replaced current state z0 and y=(y0,y1,y2) replaced by next state z1.
+   
+ 
+            
+                expr subT(c);
+                subT=T.substitute(y,z1);
+                subT=subT.substitute(x,z0);
+		std::cout << "At k="<<k<<" subT : " << subT << "\n\n"; 
+
+                path=path && subT;
+		std::cout << "At k="<<k<<"path is: " << path << "\n\n"; 
+                
+ 
+ 
+ 
+ 
+// Todo: debug from below
+// implement equality checking 
+//
+
+
+
+        loop=(!x[0] && !x[0]);  //reset loop condition
+	for(unsigned j=0;j <= (k-1);j++){ //create loop_d  for d >= 1
+        	expr_vector zd(c); // loop for creating variables [x_d_0, x_d_1,x_d_2]= s_d
+		for(unsigned i=0; i<N; ++i){
+			std::stringstream zdName;
+			zdName << "x_" << k << "_" << i;
+			zd.push_back(c.bool_const(zdName.str().c_str()));
+		}
+ 
+        	expr subL(c);
+ 	        subL=compeq.substitute(x,zd);
+	
+       		expr_vector zj(c); // loop for creating variables [x_j_0, x_j_1,x_j_2]= s_j
+		for(unsigned i=0; i<N; ++i){
+			std::stringstream zjName;
+			zjName << "x_" << j << "_" << i;
+			zj.push_back(c.bool_const(zjName.str().c_str()));
+		}
+ 
+//// next  line: generate subL. 
+ 
+       		subL=subL.substitute(y,zj);
+		std::cout <<"at k="<<k<<"subL is: "<<subL<<"\n\n";
+		//getchar(); 
+		loop = loop || subL; 
+	}// end of for index j  
+ 
+		std::cout <<"at k="<<k<<"loop is: "<<loop<<"\n\n";
+		
+
+
+		
+		
+               // getchar(); 
+ 
+ 
+//// meta logic below seems okay.  
+ 
+
+
+	s.add(path && (!loop));
+        if(s.check()==unsat){
+		int rd=k;
+		std::cout<<"\n\n rd="<< rd <<"\n\n"; 
+             //   getchar();
+		exit(0);
+        } // found rd exit
+	else{
+		std::cout<<"Satisfiable. Printing the model"<<"\n\n";
+		model m=s.get_model();
+	        for (unsigned i = 0; i < m.size(); i++) {
+            		func_decl v = m[i];
+	    		std:: cout << v.name() << " = " << m.get_const_interp(v) << "\t";
+        	}
+		std::cout << "\n\n";
+		s.reset();
+        }
+        
+        
+        
+ 
+ 
+} //end of outer for loop with index k 
+			std::cout<<"\n\n Reached  max limit\n\n";
+
+
+        	        return 0; 
+} //end of main 
+
+
 
 
 void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation, expr_vector &myX, expr_vector &myY,
 		int maxBitRequired, std::map<int, expr> myMappingFromIntToExprForVertices, std::vector<int> myVectorOfAllVertices,
-		int myStateInitialInt, expr_vector &myStepwiseTransitionRelation, expr_vector &xES, expr_vector &yED) {
+		int myStateInitialInt, expr_vector &myStepwiseTransitionRelation, expr_vector &xES, expr_vector &yED, expr theT) {
 
 	int j1, j2, totalNumberOfStates, j3;
 	unsigned int j4;
@@ -298,6 +511,7 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 	std::cout << "\ntotalNumberOfStates " << totalNumberOfStates;
 
 	for(j1 = 0; j1 < totalNumberOfStates; j1++) {
+//	for(j1 = totalNumberOfStates - 1; j1 > 0; j1--) {
 		std::cout << "\n\n************************************************";
 		std::cout << "\nIn j1. Searching for state " << j1;
 
@@ -316,6 +530,8 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 
 
 		for(j2 = 0; j2 < totalNumberOfStates; j2++) {
+		//for(j2 =  totalNumberOfStates - 1; j2 > 0; j2++) {
+
 			std::cout << "\n\nIn j2. Searching at path length " << j2;
 			if(j2 == 0) {
 				std::cout << "\nSearching for path length = 0";
@@ -375,7 +591,8 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 	for(std::vector<int>::iterator tw = allShortestPathLength.begin(); tw != allShortestPathLength.end(); tw++) {
 		std::cout << "\n" << *tw;
 	}
-	//std::cout << std::max_element(allShortestPathLength.begin(), allShortestPathLength.end());
+	std::cout << "\n\n\nWhat is this: ";
+	std::max_element(allShortestPathLength.begin(), allShortestPathLength.end());
 
 	std::cout << "\n\n";
 
@@ -389,8 +606,11 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 
 
 	std::cout << "\ntheRechabilityeDiameter: " << *(std::max_element(allShortestPathLength.begin(), allShortestPathLength.end()));
+	std::cout << "This is the line we need: " << theT;
 
 	return ;//*(std::max_element(allShortestPathLength.begin(), allShortestPathLength.end()));
+	
+	
 }
 
 
@@ -451,7 +671,17 @@ void f01_controlFunctionForReachability(std::string myFileName, std::vector<std:
 		expr dharwad(*c);
 		expr_vector XES(*c);
 		/*
-		for(int ej1 = 0; ej1 < *p3_theMaxBit; ej1++) {
+		for(int ej1 = 0
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		; ej1 < *p3_theMaxBit; ej1++) {
 			std::stringstream x, y;
 
 			x << "x_" << ej1;
@@ -667,7 +897,7 @@ void f07_createEdgeToBooleanExpression2(std::vector<std::vector<int> > *p1_theIn
 		std::stringstream x, y;
 
 		x << "x_" << j1;
-		y << "yy_" << j1;
+		y << "y_" << j1;
 		xES.push_back((*c).bool_const(x.str().c_str()));
 		yED.push_back((*c).bool_const(y.str().c_str()));
 	}
@@ -887,18 +1117,7 @@ void f07_createEdgeToBooleanExpression2(std::vector<std::vector<int> > *p1_theIn
 	}
 
 
-/*
-	std::cout << "\nCheck parameters. integerToBinaryForAllVertices: ";
-	for(std::map<int, std::vector<int> >::iterator i1 = integerToBinaryForAllVertices.begin(); i1 != integerToBinaryForAllVertices.end(); i1++) {
-		int g1 = i1->first;
-		std::vector<int> g2 = i1->second;
 
-		std::cout << "\n" << g1 << " = ";
-		for(std::vector<int>::iterator i2 = g2.begin(); i2 != g2.end(); i2++) {
-			std::cout << *i2 << " ";
-		}
-	}
-*/
 	return;
 }
 
@@ -1107,6 +1326,5 @@ void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theI
 	return;
 }
 
-//f01_calculateReachabilityDiameter  010 -> 011
- //*/
+
 

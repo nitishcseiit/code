@@ -1,0 +1,4805 @@
+
+In f05
+Testing. theExp: (and (not x_0) (not x_1) (not x_2))
+Testing. theExp: (and (not x_0) (not x_1) x_2)
+Testing. theExp: (and (not x_0) x_1 (not x_2))
+Testing. theExp: (and (not x_0) x_1 x_2)
+Testing. theExp: (and x_0 (not x_1) (not x_2))
+Testing. theExp: (and x_0 (not x_1) x_2)
+Testing. theExp: (and x_0 x_1 (not x_2))
+Testing. theExp: (and x_0 x_1 x_2)
+In f07-2
+integerToBinaryForAllVertices size: 8
+Before for loop. sizeOfTheAdjacencyListOfInitialState: -5
+tx1: (and (not x_0) (not x_1) (not x_2))
+tx2: (and (not yy_0) (not yy_1) yy_2)
+
+tx1: (and (not x_0) (not x_1) (not x_2))
+tx2: (and (not yy_0) yy_1 (not yy_2))
+
+tx1: (and (not x_0) (not x_1) x_2)
+tx2: (and (not yy_0) yy_1 yy_2)
+
+tx1: (and (not x_0) x_1 (not x_2))
+tx2: (and (not yy_0) yy_1 yy_2)
+
+tx1: (and (not x_0) x_1 (not x_2))
+tx2: (and yy_0 (not yy_1) (not yy_2))
+
+tx1: (and (not x_0) x_1 (not x_2))
+tx2: (and (not yy_0) (not yy_1) (not yy_2))
+
+tx1: (and (not x_0) x_1 x_2)
+tx2: (and yy_0 (not yy_1) (not yy_2))
+
+tx1: (and (not x_0) x_1 x_2)
+tx2: (and yy_0 (not yy_1) yy_2)
+
+tx1: (and x_0 (not x_1) (not x_2))
+tx2: (and (not yy_0) yy_1 (not yy_2))
+
+tx1: (and x_0 (not x_1) (not x_2))
+tx2: (and yy_0 (not yy_1) yy_2)
+
+tx1: (and x_0 (not x_1) x_2)
+tx2: (and yy_0 yy_1 (not yy_2))
+
+tx1: (and x_0 (not x_1) x_2)
+tx2: (and (not yy_0) yy_1 yy_2)
+
+tx1: (and x_0 x_1 (not x_2))
+tx2: (and yy_0 yy_1 yy_2)
+
+tx1: (and x_0 x_1 (not x_2))
+tx2: (and (not yy_0) (not yy_1) yy_2)
+
+tx1: (and x_0 x_1 x_2)
+tx2: (and yy_0 (not yy_1) (not yy_2))
+After for loop. sizeOfTheAdjacencyListOfInitialState: 2
+OUTSIDE TheT: (let ((a!1 (and (and (and (not x_0) (not x_1)) (not x_2))
+                (and (and (not yy_0) (not yy_1)) yy_2)))
+      (a!2 (and (and (and (not x_0) (not x_1)) (not x_2))
+                (and (and (not yy_0) yy_1) (not yy_2))))
+      (a!3 (and (and (not x_0) (not x_1)) x_2 (and (and (not yy_0) yy_1) yy_2)))
+      (a!4 (and (and (and (not x_0) x_1) (not x_2))
+                (and (and (not yy_0) yy_1) yy_2)))
+      (a!5 (and (and (and (not x_0) x_1) (not x_2))
+                (and (and yy_0 (not yy_1)) (not yy_2))))
+      (a!6 (and (and (and (not x_0) x_1) (not x_2))
+                (and (not yy_0) (not yy_1))
+                (not yy_2)))
+      (a!7 (and (and (and (not x_0) x_1) x_2)
+                (and (and yy_0 (not yy_1)) (not yy_2))))
+      (a!8 (and (and (and (not x_0) x_1) x_2) (and (and yy_0 (not yy_1)) yy_2)))
+      (a!9 (and (and (and x_0 (not x_1)) (not x_2))
+                (and (and (not yy_0) yy_1) (not yy_2))))
+      (a!10 (and (and (and x_0 (not x_1)) (not x_2))
+                 (and (and yy_0 (not yy_1)) yy_2)))
+      (a!11 (and (and (and x_0 (not x_1)) x_2) (and yy_0 yy_1) (not yy_2)))
+      (a!12 (and (and (and x_0 (not x_1)) x_2) (and (and (not yy_0) yy_1) yy_2)))
+      (a!13 (and (and (and x_0 x_1) (not x_2))
+                 (and (and (not yy_0) (not yy_1)) yy_2)))
+      (a!14 (and (and x_0 x_1) x_2 (and (and yy_0 (not yy_1)) (not yy_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and x_0 x_1) (not x_2)) (and yy_0 yy_1) yy_2)
+      a!13
+      a!14))
+Pre-processing done. Z3 library starts now
+Check theT: (let ((a!1 (and (and (and (not x_0) (not x_1)) (not x_2))
+                (and (and (not yy_0) (not yy_1)) yy_2)))
+      (a!2 (and (and (and (not x_0) (not x_1)) (not x_2))
+                (and (and (not yy_0) yy_1) (not yy_2))))
+      (a!3 (and (and (not x_0) (not x_1)) x_2 (and (and (not yy_0) yy_1) yy_2)))
+      (a!4 (and (and (and (not x_0) x_1) (not x_2))
+                (and (and (not yy_0) yy_1) yy_2)))
+      (a!5 (and (and (and (not x_0) x_1) (not x_2))
+                (and (and yy_0 (not yy_1)) (not yy_2))))
+      (a!6 (and (and (and (not x_0) x_1) (not x_2))
+                (and (not yy_0) (not yy_1))
+                (not yy_2)))
+      (a!7 (and (and (and (not x_0) x_1) x_2)
+                (and (and yy_0 (not yy_1)) (not yy_2))))
+      (a!8 (and (and (and (not x_0) x_1) x_2) (and (and yy_0 (not yy_1)) yy_2)))
+      (a!9 (and (and (and x_0 (not x_1)) (not x_2))
+                (and (and (not yy_0) yy_1) (not yy_2))))
+      (a!10 (and (and (and x_0 (not x_1)) (not x_2))
+                 (and (and yy_0 (not yy_1)) yy_2)))
+      (a!11 (and (and (and x_0 (not x_1)) x_2) (and yy_0 yy_1) (not yy_2)))
+      (a!12 (and (and (and x_0 (not x_1)) x_2) (and (and (not yy_0) yy_1) yy_2)))
+      (a!13 (and (and (and x_0 x_1) (not x_2))
+                 (and (and (not yy_0) (not yy_1)) yy_2)))
+      (a!14 (and (and x_0 x_1) x_2 (and (and yy_0 (not yy_1)) (not yy_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and x_0 x_1) (not x_2)) (and yy_0 yy_1) yy_2)
+      a!13
+      a!14))
+Check theIorF_I: (and (not x_0) (not x_1) x_2)
+Check theIorF_F: null
+In above. theMaxBitrequired: 3
+
+
+Hy111111111111111
+
+
+Hy22222222222222222
+
+
+Hy33333333333333333
+Hy4444444444444
+
+
+CCCCCCCCCCCCCCCCCCCCalculate the receurrence diameter of a Kripke structure.
+5555555555555555555555555
+::: 8
+This is a vertex: 0. pushed
+This is a vertex: 1. pushed
+This is a vertex: 2. pushed
+This is a vertex: 3. pushed
+This is a vertex: 4. pushed
+This is a vertex: 5. pushed
+This is a vertex: 6. pushed
+This is a vertex: 7. pushed
+::myStateInitialExpr before substitute: (and (not x_0) (not x_1) x_2)
+::Check size of the adjacency list of inputtttttttt: 
+::myStateInitialExpr after substitute: (and (not s_0_0) (not s_1_0) s_2_0)
+Hy gogo
+myStepwiseTransitionRelation size: 0
+maxBitRequired: 3
+myTransitionRelation: (let ((a!1 (and (and (and (not x_0) (not x_1)) (not x_2))
+                (and (and (not yy_0) (not yy_1)) yy_2)))
+      (a!2 (and (and (and (not x_0) (not x_1)) (not x_2))
+                (and (and (not yy_0) yy_1) (not yy_2))))
+      (a!3 (and (and (not x_0) (not x_1)) x_2 (and (and (not yy_0) yy_1) yy_2)))
+      (a!4 (and (and (and (not x_0) x_1) (not x_2))
+                (and (and (not yy_0) yy_1) yy_2)))
+      (a!5 (and (and (and (not x_0) x_1) (not x_2))
+                (and (and yy_0 (not yy_1)) (not yy_2))))
+      (a!6 (and (and (and (not x_0) x_1) (not x_2))
+                (and (not yy_0) (not yy_1))
+                (not yy_2)))
+      (a!7 (and (and (and (not x_0) x_1) x_2)
+                (and (and yy_0 (not yy_1)) (not yy_2))))
+      (a!8 (and (and (and (not x_0) x_1) x_2) (and (and yy_0 (not yy_1)) yy_2)))
+      (a!9 (and (and (and x_0 (not x_1)) (not x_2))
+                (and (and (not yy_0) yy_1) (not yy_2))))
+      (a!10 (and (and (and x_0 (not x_1)) (not x_2))
+                 (and (and yy_0 (not yy_1)) yy_2)))
+      (a!11 (and (and (and x_0 (not x_1)) x_2) (and yy_0 yy_1) (not yy_2)))
+      (a!12 (and (and (and x_0 (not x_1)) x_2) (and (and (not yy_0) yy_1) yy_2)))
+      (a!13 (and (and (and x_0 x_1) (not x_2))
+                 (and (and (not yy_0) (not yy_1)) yy_2)))
+      (a!14 (and (and x_0 x_1) x_2 (and (and yy_0 (not yy_1)) (not yy_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and x_0 x_1) (not x_2)) (and yy_0 yy_1) yy_2)
+      a!13
+      a!14))
+myVectorOfAllVertices.size(): 8
+xES.size(): 3
+
+j4Combo: 0 : 1
+maxBitRequired: 3
+myINIT[0: s_0_0
+myFINA[0]: s_0_1
+yED[0]: yy_0
+Substituted both xes: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+
+j4Combo: 1 : 2
+maxBitRequired: 3
+myINIT[0: s_0_1
+myFINA[0]: s_0_2
+yED[0]: yy_0
+Substituted both xes: (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+
+j4Combo: 2 : 3
+maxBitRequired: 3
+myINIT[0: s_0_2
+myFINA[0]: s_0_3
+yED[0]: yy_0
+Substituted both xes: (let ((a!1 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!2 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!3 (and (and (not s_0_2) (not s_1_2))
+                s_2_2
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!4 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!5 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!6 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (not s_0_3) (not s_1_3))
+                (not s_2_3)))
+      (a!7 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!8 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!9 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!10 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!11 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!12 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!13 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!14 (and (and s_0_2 s_1_2)
+                 s_2_2
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_2 s_1_2) (not s_2_2)) (and s_0_3 s_1_3) s_2_3)
+      a!13
+      a!14))
+
+j4Combo: 3 : 4
+maxBitRequired: 3
+myINIT[0: s_0_3
+myFINA[0]: s_0_4
+yED[0]: yy_0
+Substituted both xes: (let ((a!1 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!2 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!3 (and (and (not s_0_3) (not s_1_3))
+                s_2_3
+                (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!4 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!5 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!6 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (not s_0_4) (not s_1_4))
+                (not s_2_4)))
+      (a!7 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!8 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!9 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!10 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                 (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!11 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and s_0_4 s_1_4)
+                 (not s_2_4)))
+      (a!12 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!13 (and (and (and s_0_3 s_1_3) (not s_2_3))
+                 (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!14 (and (and s_0_3 s_1_3)
+                 s_2_3
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_3 s_1_3) (not s_2_3)) (and s_0_4 s_1_4) s_2_4)
+      a!13
+      a!14))
+
+j4Combo: 4 : 5
+maxBitRequired: 3
+myINIT[0: s_0_4
+myFINA[0]: s_0_5
+yED[0]: yy_0
+Substituted both xes: (let ((a!1 (and (and (and (not s_0_4) (not s_1_4)) (not s_2_4))
+                (and (and (not s_0_5) (not s_1_5)) s_2_5)))
+      (a!2 (and (and (and (not s_0_4) (not s_1_4)) (not s_2_4))
+                (and (and (not s_0_5) s_1_5) (not s_2_5))))
+      (a!3 (and (and (not s_0_4) (not s_1_4))
+                s_2_4
+                (and (and (not s_0_5) s_1_5) s_2_5)))
+      (a!4 (and (and (and (not s_0_4) s_1_4) (not s_2_4))
+                (and (and (not s_0_5) s_1_5) s_2_5)))
+      (a!5 (and (and (and (not s_0_4) s_1_4) (not s_2_4))
+                (and (and s_0_5 (not s_1_5)) (not s_2_5))))
+      (a!6 (and (and (and (not s_0_4) s_1_4) (not s_2_4))
+                (and (not s_0_5) (not s_1_5))
+                (not s_2_5)))
+      (a!7 (and (and (and (not s_0_4) s_1_4) s_2_4)
+                (and (and s_0_5 (not s_1_5)) (not s_2_5))))
+      (a!8 (and (and (and (not s_0_4) s_1_4) s_2_4)
+                (and (and s_0_5 (not s_1_5)) s_2_5)))
+      (a!9 (and (and (and s_0_4 (not s_1_4)) (not s_2_4))
+                (and (and (not s_0_5) s_1_5) (not s_2_5))))
+      (a!10 (and (and (and s_0_4 (not s_1_4)) (not s_2_4))
+                 (and (and s_0_5 (not s_1_5)) s_2_5)))
+      (a!11 (and (and (and s_0_4 (not s_1_4)) s_2_4)
+                 (and s_0_5 s_1_5)
+                 (not s_2_5)))
+      (a!12 (and (and (and s_0_4 (not s_1_4)) s_2_4)
+                 (and (and (not s_0_5) s_1_5) s_2_5)))
+      (a!13 (and (and (and s_0_4 s_1_4) (not s_2_4))
+                 (and (and (not s_0_5) (not s_1_5)) s_2_5)))
+      (a!14 (and (and s_0_4 s_1_4)
+                 s_2_4
+                 (and (and s_0_5 (not s_1_5)) (not s_2_5)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_4 s_1_4) (not s_2_4)) (and s_0_5 s_1_5) s_2_5)
+      a!13
+      a!14))
+
+j4Combo: 5 : 6
+maxBitRequired: 3
+myINIT[0: s_0_5
+myFINA[0]: s_0_6
+yED[0]: yy_0
+Substituted both xes: (let ((a!1 (and (and (and (not s_0_5) (not s_1_5)) (not s_2_5))
+                (and (and (not s_0_6) (not s_1_6)) s_2_6)))
+      (a!2 (and (and (and (not s_0_5) (not s_1_5)) (not s_2_5))
+                (and (and (not s_0_6) s_1_6) (not s_2_6))))
+      (a!3 (and (and (not s_0_5) (not s_1_5))
+                s_2_5
+                (and (and (not s_0_6) s_1_6) s_2_6)))
+      (a!4 (and (and (and (not s_0_5) s_1_5) (not s_2_5))
+                (and (and (not s_0_6) s_1_6) s_2_6)))
+      (a!5 (and (and (and (not s_0_5) s_1_5) (not s_2_5))
+                (and (and s_0_6 (not s_1_6)) (not s_2_6))))
+      (a!6 (and (and (and (not s_0_5) s_1_5) (not s_2_5))
+                (and (not s_0_6) (not s_1_6))
+                (not s_2_6)))
+      (a!7 (and (and (and (not s_0_5) s_1_5) s_2_5)
+                (and (and s_0_6 (not s_1_6)) (not s_2_6))))
+      (a!8 (and (and (and (not s_0_5) s_1_5) s_2_5)
+                (and (and s_0_6 (not s_1_6)) s_2_6)))
+      (a!9 (and (and (and s_0_5 (not s_1_5)) (not s_2_5))
+                (and (and (not s_0_6) s_1_6) (not s_2_6))))
+      (a!10 (and (and (and s_0_5 (not s_1_5)) (not s_2_5))
+                 (and (and s_0_6 (not s_1_6)) s_2_6)))
+      (a!11 (and (and (and s_0_5 (not s_1_5)) s_2_5)
+                 (and s_0_6 s_1_6)
+                 (not s_2_6)))
+      (a!12 (and (and (and s_0_5 (not s_1_5)) s_2_5)
+                 (and (and (not s_0_6) s_1_6) s_2_6)))
+      (a!13 (and (and (and s_0_5 s_1_5) (not s_2_5))
+                 (and (and (not s_0_6) (not s_1_6)) s_2_6)))
+      (a!14 (and (and s_0_5 s_1_5)
+                 s_2_5
+                 (and (and s_0_6 (not s_1_6)) (not s_2_6)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_5 s_1_5) (not s_2_5)) (and s_0_6 s_1_6) s_2_6)
+      a!13
+      a!14))
+
+j4Combo: 6 : 7
+maxBitRequired: 3
+myINIT[0: s_0_6
+myFINA[0]: s_0_7
+yED[0]: yy_0
+Substituted both xes: (let ((a!1 (and (and (and (not s_0_6) (not s_1_6)) (not s_2_6))
+                (and (and (not s_0_7) (not s_1_7)) s_2_7)))
+      (a!2 (and (and (and (not s_0_6) (not s_1_6)) (not s_2_6))
+                (and (and (not s_0_7) s_1_7) (not s_2_7))))
+      (a!3 (and (and (not s_0_6) (not s_1_6))
+                s_2_6
+                (and (and (not s_0_7) s_1_7) s_2_7)))
+      (a!4 (and (and (and (not s_0_6) s_1_6) (not s_2_6))
+                (and (and (not s_0_7) s_1_7) s_2_7)))
+      (a!5 (and (and (and (not s_0_6) s_1_6) (not s_2_6))
+                (and (and s_0_7 (not s_1_7)) (not s_2_7))))
+      (a!6 (and (and (and (not s_0_6) s_1_6) (not s_2_6))
+                (and (not s_0_7) (not s_1_7))
+                (not s_2_7)))
+      (a!7 (and (and (and (not s_0_6) s_1_6) s_2_6)
+                (and (and s_0_7 (not s_1_7)) (not s_2_7))))
+      (a!8 (and (and (and (not s_0_6) s_1_6) s_2_6)
+                (and (and s_0_7 (not s_1_7)) s_2_7)))
+      (a!9 (and (and (and s_0_6 (not s_1_6)) (not s_2_6))
+                (and (and (not s_0_7) s_1_7) (not s_2_7))))
+      (a!10 (and (and (and s_0_6 (not s_1_6)) (not s_2_6))
+                 (and (and s_0_7 (not s_1_7)) s_2_7)))
+      (a!11 (and (and (and s_0_6 (not s_1_6)) s_2_6)
+                 (and s_0_7 s_1_7)
+                 (not s_2_7)))
+      (a!12 (and (and (and s_0_6 (not s_1_6)) s_2_6)
+                 (and (and (not s_0_7) s_1_7) s_2_7)))
+      (a!13 (and (and (and s_0_6 s_1_6) (not s_2_6))
+                 (and (and (not s_0_7) (not s_1_7)) s_2_7)))
+      (a!14 (and (and s_0_6 s_1_6)
+                 s_2_6
+                 (and (and s_0_7 (not s_1_7)) (not s_2_7)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_6 s_1_6) (not s_2_6)) (and s_0_7 s_1_7) s_2_7)
+      a!13
+      a!14))
+Check. myStepwiseTransitionRelation. size: 7
+##: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+##: (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+##: (let ((a!1 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!2 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!3 (and (and (not s_0_2) (not s_1_2))
+                s_2_2
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!4 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!5 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!6 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (not s_0_3) (not s_1_3))
+                (not s_2_3)))
+      (a!7 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!8 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!9 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!10 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!11 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!12 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!13 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!14 (and (and s_0_2 s_1_2)
+                 s_2_2
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_2 s_1_2) (not s_2_2)) (and s_0_3 s_1_3) s_2_3)
+      a!13
+      a!14))
+##: (let ((a!1 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!2 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!3 (and (and (not s_0_3) (not s_1_3))
+                s_2_3
+                (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!4 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!5 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!6 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (not s_0_4) (not s_1_4))
+                (not s_2_4)))
+      (a!7 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!8 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!9 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!10 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                 (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!11 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and s_0_4 s_1_4)
+                 (not s_2_4)))
+      (a!12 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!13 (and (and (and s_0_3 s_1_3) (not s_2_3))
+                 (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!14 (and (and s_0_3 s_1_3)
+                 s_2_3
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_3 s_1_3) (not s_2_3)) (and s_0_4 s_1_4) s_2_4)
+      a!13
+      a!14))
+##: (let ((a!1 (and (and (and (not s_0_4) (not s_1_4)) (not s_2_4))
+                (and (and (not s_0_5) (not s_1_5)) s_2_5)))
+      (a!2 (and (and (and (not s_0_4) (not s_1_4)) (not s_2_4))
+                (and (and (not s_0_5) s_1_5) (not s_2_5))))
+      (a!3 (and (and (not s_0_4) (not s_1_4))
+                s_2_4
+                (and (and (not s_0_5) s_1_5) s_2_5)))
+      (a!4 (and (and (and (not s_0_4) s_1_4) (not s_2_4))
+                (and (and (not s_0_5) s_1_5) s_2_5)))
+      (a!5 (and (and (and (not s_0_4) s_1_4) (not s_2_4))
+                (and (and s_0_5 (not s_1_5)) (not s_2_5))))
+      (a!6 (and (and (and (not s_0_4) s_1_4) (not s_2_4))
+                (and (not s_0_5) (not s_1_5))
+                (not s_2_5)))
+      (a!7 (and (and (and (not s_0_4) s_1_4) s_2_4)
+                (and (and s_0_5 (not s_1_5)) (not s_2_5))))
+      (a!8 (and (and (and (not s_0_4) s_1_4) s_2_4)
+                (and (and s_0_5 (not s_1_5)) s_2_5)))
+      (a!9 (and (and (and s_0_4 (not s_1_4)) (not s_2_4))
+                (and (and (not s_0_5) s_1_5) (not s_2_5))))
+      (a!10 (and (and (and s_0_4 (not s_1_4)) (not s_2_4))
+                 (and (and s_0_5 (not s_1_5)) s_2_5)))
+      (a!11 (and (and (and s_0_4 (not s_1_4)) s_2_4)
+                 (and s_0_5 s_1_5)
+                 (not s_2_5)))
+      (a!12 (and (and (and s_0_4 (not s_1_4)) s_2_4)
+                 (and (and (not s_0_5) s_1_5) s_2_5)))
+      (a!13 (and (and (and s_0_4 s_1_4) (not s_2_4))
+                 (and (and (not s_0_5) (not s_1_5)) s_2_5)))
+      (a!14 (and (and s_0_4 s_1_4)
+                 s_2_4
+                 (and (and s_0_5 (not s_1_5)) (not s_2_5)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_4 s_1_4) (not s_2_4)) (and s_0_5 s_1_5) s_2_5)
+      a!13
+      a!14))
+##: (let ((a!1 (and (and (and (not s_0_5) (not s_1_5)) (not s_2_5))
+                (and (and (not s_0_6) (not s_1_6)) s_2_6)))
+      (a!2 (and (and (and (not s_0_5) (not s_1_5)) (not s_2_5))
+                (and (and (not s_0_6) s_1_6) (not s_2_6))))
+      (a!3 (and (and (not s_0_5) (not s_1_5))
+                s_2_5
+                (and (and (not s_0_6) s_1_6) s_2_6)))
+      (a!4 (and (and (and (not s_0_5) s_1_5) (not s_2_5))
+                (and (and (not s_0_6) s_1_6) s_2_6)))
+      (a!5 (and (and (and (not s_0_5) s_1_5) (not s_2_5))
+                (and (and s_0_6 (not s_1_6)) (not s_2_6))))
+      (a!6 (and (and (and (not s_0_5) s_1_5) (not s_2_5))
+                (and (not s_0_6) (not s_1_6))
+                (not s_2_6)))
+      (a!7 (and (and (and (not s_0_5) s_1_5) s_2_5)
+                (and (and s_0_6 (not s_1_6)) (not s_2_6))))
+      (a!8 (and (and (and (not s_0_5) s_1_5) s_2_5)
+                (and (and s_0_6 (not s_1_6)) s_2_6)))
+      (a!9 (and (and (and s_0_5 (not s_1_5)) (not s_2_5))
+                (and (and (not s_0_6) s_1_6) (not s_2_6))))
+      (a!10 (and (and (and s_0_5 (not s_1_5)) (not s_2_5))
+                 (and (and s_0_6 (not s_1_6)) s_2_6)))
+      (a!11 (and (and (and s_0_5 (not s_1_5)) s_2_5)
+                 (and s_0_6 s_1_6)
+                 (not s_2_6)))
+      (a!12 (and (and (and s_0_5 (not s_1_5)) s_2_5)
+                 (and (and (not s_0_6) s_1_6) s_2_6)))
+      (a!13 (and (and (and s_0_5 s_1_5) (not s_2_5))
+                 (and (and (not s_0_6) (not s_1_6)) s_2_6)))
+      (a!14 (and (and s_0_5 s_1_5)
+                 s_2_5
+                 (and (and s_0_6 (not s_1_6)) (not s_2_6)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_5 s_1_5) (not s_2_5)) (and s_0_6 s_1_6) s_2_6)
+      a!13
+      a!14))
+##: (let ((a!1 (and (and (and (not s_0_6) (not s_1_6)) (not s_2_6))
+                (and (and (not s_0_7) (not s_1_7)) s_2_7)))
+      (a!2 (and (and (and (not s_0_6) (not s_1_6)) (not s_2_6))
+                (and (and (not s_0_7) s_1_7) (not s_2_7))))
+      (a!3 (and (and (not s_0_6) (not s_1_6))
+                s_2_6
+                (and (and (not s_0_7) s_1_7) s_2_7)))
+      (a!4 (and (and (and (not s_0_6) s_1_6) (not s_2_6))
+                (and (and (not s_0_7) s_1_7) s_2_7)))
+      (a!5 (and (and (and (not s_0_6) s_1_6) (not s_2_6))
+                (and (and s_0_7 (not s_1_7)) (not s_2_7))))
+      (a!6 (and (and (and (not s_0_6) s_1_6) (not s_2_6))
+                (and (not s_0_7) (not s_1_7))
+                (not s_2_7)))
+      (a!7 (and (and (and (not s_0_6) s_1_6) s_2_6)
+                (and (and s_0_7 (not s_1_7)) (not s_2_7))))
+      (a!8 (and (and (and (not s_0_6) s_1_6) s_2_6)
+                (and (and s_0_7 (not s_1_7)) s_2_7)))
+      (a!9 (and (and (and s_0_6 (not s_1_6)) (not s_2_6))
+                (and (and (not s_0_7) s_1_7) (not s_2_7))))
+      (a!10 (and (and (and s_0_6 (not s_1_6)) (not s_2_6))
+                 (and (and s_0_7 (not s_1_7)) s_2_7)))
+      (a!11 (and (and (and s_0_6 (not s_1_6)) s_2_6)
+                 (and s_0_7 s_1_7)
+                 (not s_2_7)))
+      (a!12 (and (and (and s_0_6 (not s_1_6)) s_2_6)
+                 (and (and (not s_0_7) s_1_7) s_2_7)))
+      (a!13 (and (and (and s_0_6 s_1_6) (not s_2_6))
+                 (and (and (not s_0_7) (not s_1_7)) s_2_7)))
+      (a!14 (and (and s_0_6 s_1_6)
+                 s_2_6
+                 (and (and s_0_7 (not s_1_7)) (not s_2_7)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_6 s_1_6) (not s_2_6)) (and s_0_7 s_1_7) s_2_7)
+      a!13
+      a!14))
+totalNumberOfStates 8
+
+************************************************
+In j1. Searching for state 0
+myStateFinalExpr: (and (not x_0) (not x_1) (not x_2))
+
+In j2. Searching at path length 0
+Searching for path length = 0
+
+In j2. Searching at path length 1
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and (not s_0_1) (not s_1_1) (not s_2_1))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and s_0_1 s_1_1)
+                     s_2_1)
+                a!13
+                a!14)))
+  (and true a!15)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 1
+
+In j2. Searching at path length 2
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and (not s_0_2) (not s_1_2) (not s_2_2))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (not s_0_2) (not s_1_2))
+                 (not s_2_2)))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and s_0_2 s_1_2)
+                     s_2_2)
+                a!28
+                a!29)))
+  (and true a!15 a!30)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 2
+
+In j2. Searching at path length 3
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and (not s_0_3) (not s_1_3) (not s_2_3))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+trr: 2 IS (let ((a!1 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!2 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!3 (and (and (not s_0_2) (not s_1_2))
+                s_2_2
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!4 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!5 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!6 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (not s_0_3) (not s_1_3))
+                (not s_2_3)))
+      (a!7 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!8 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!9 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!10 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!11 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!12 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!13 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!14 (and (and s_0_2 s_1_2)
+                 s_2_2
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_2 s_1_2) (not s_2_2)) (and s_0_3 s_1_3) s_2_3)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) (not s_2_2))))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and s_0_2 s_1_2) (not s_2_2))))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!31 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!32 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!33 (and (and (and (not s_0_2) (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!34 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!35 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!36 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (not s_0_3) (not s_1_3))
+                 (not s_2_3)))
+      (a!37 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!38 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!39 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!40 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!41 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!42 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!43 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!44 (and (and (and s_0_2 s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and (and s_0_2 s_1_2) s_2_2))
+                a!28
+                a!29))
+      (a!45 (or a!31
+                a!32
+                a!33
+                a!34
+                a!35
+                a!36
+                a!37
+                a!38
+                a!39
+                a!40
+                a!41
+                a!42
+                (and (and (and s_0_2 s_1_2) (not s_2_2))
+                     (and s_0_3 s_1_3)
+                     s_2_3)
+                a!43
+                a!44)))
+  (and true a!15 a!30 a!45)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 3
+
+In j2. Searching at path length 4
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and (not s_0_4) (not s_1_4) (not s_2_4))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+trr: 2 IS (let ((a!1 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!2 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!3 (and (and (not s_0_2) (not s_1_2))
+                s_2_2
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!4 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!5 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!6 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (not s_0_3) (not s_1_3))
+                (not s_2_3)))
+      (a!7 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!8 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!9 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!10 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!11 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!12 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!13 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!14 (and (and s_0_2 s_1_2)
+                 s_2_2
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_2 s_1_2) (not s_2_2)) (and s_0_3 s_1_3) s_2_3)
+      a!13
+      a!14))
+trr: 3 IS (let ((a!1 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!2 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!3 (and (and (not s_0_3) (not s_1_3))
+                s_2_3
+                (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!4 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!5 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!6 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (not s_0_4) (not s_1_4))
+                (not s_2_4)))
+      (a!7 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!8 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!9 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!10 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                 (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!11 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and s_0_4 s_1_4)
+                 (not s_2_4)))
+      (a!12 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!13 (and (and (and s_0_3 s_1_3) (not s_2_3))
+                 (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!14 (and (and s_0_3 s_1_3)
+                 s_2_3
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_3 s_1_3) (not s_2_3)) (and s_0_4 s_1_4) s_2_4)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) (not s_2_2))))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and s_0_2 s_1_2) (not s_2_2))))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!31 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!32 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!33 (and (and (and (not s_0_2) (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!34 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!35 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!36 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) (not s_2_3))))
+      (a!37 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!38 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!39 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!40 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!41 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and s_0_3 s_1_3) (not s_2_3))))
+      (a!42 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!43 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!44 (and (and (and s_0_2 s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!46 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                 (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!47 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                 (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!48 (and (and (and (not s_0_3) (not s_1_3)) s_2_3)
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!49 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!50 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!51 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                 (and (not s_0_4) (not s_1_4))
+                 (not s_2_4)))
+      (a!52 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!53 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                 (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!54 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                 (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!55 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                 (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!56 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and s_0_4 s_1_4)
+                 (not s_2_4)))
+      (a!57 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!58 (and (and (and s_0_3 s_1_3) (not s_2_3))
+                 (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!59 (and (and (and s_0_3 s_1_3) s_2_3)
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and (and s_0_2 s_1_2) s_2_2))
+                a!28
+                a!29))
+      (a!45 (or a!31
+                a!32
+                a!33
+                a!34
+                a!35
+                a!36
+                a!37
+                a!38
+                a!39
+                a!40
+                a!41
+                a!42
+                (and (and (and s_0_2 s_1_2) (not s_2_2))
+                     (and (and s_0_3 s_1_3) s_2_3))
+                a!43
+                a!44))
+      (a!60 (or a!46
+                a!47
+                a!48
+                a!49
+                a!50
+                a!51
+                a!52
+                a!53
+                a!54
+                a!55
+                a!56
+                a!57
+                (and (and (and s_0_3 s_1_3) (not s_2_3))
+                     (and s_0_4 s_1_4)
+                     s_2_4)
+                a!58
+                a!59)))
+  (and true a!15 a!30 a!45 a!60)))
+SAT OR UNSAT: sat
+Shortest path exists for length 4
+
+************************************************
+In j1. Searching for state 1
+myStateFinalExpr: (and (not x_0) (not x_1) x_2)
+
+In j2. Searching at path length 0
+Searching for path length = 0
+Got state initial state at path length 0. State: 1
+
+************************************************
+In j1. Searching for state 2
+myStateFinalExpr: (and (not x_0) x_1 (not x_2))
+
+In j2. Searching at path length 0
+Searching for path length = 0
+
+In j2. Searching at path length 1
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and (not s_0_1) s_1_1 (not s_2_1))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and s_0_1 s_1_1)
+                     s_2_1)
+                a!13
+                a!14)))
+  (and true a!15)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 1
+
+In j2. Searching at path length 2
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and (not s_0_2) s_1_2 (not s_2_2))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (not s_0_2) (not s_1_2))
+                 (not s_2_2)))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and s_0_2 s_1_2)
+                     s_2_2)
+                a!28
+                a!29)))
+  (and true a!15 a!30)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 2
+
+In j2. Searching at path length 3
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and (not s_0_3) s_1_3 (not s_2_3))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+trr: 2 IS (let ((a!1 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!2 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!3 (and (and (not s_0_2) (not s_1_2))
+                s_2_2
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!4 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!5 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!6 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (not s_0_3) (not s_1_3))
+                (not s_2_3)))
+      (a!7 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!8 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!9 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!10 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!11 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!12 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!13 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!14 (and (and s_0_2 s_1_2)
+                 s_2_2
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_2 s_1_2) (not s_2_2)) (and s_0_3 s_1_3) s_2_3)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) (not s_2_2))))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and s_0_2 s_1_2) (not s_2_2))))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!31 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!32 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!33 (and (and (and (not s_0_2) (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!34 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!35 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!36 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (not s_0_3) (not s_1_3))
+                 (not s_2_3)))
+      (a!37 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!38 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!39 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!40 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!41 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!42 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!43 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!44 (and (and (and s_0_2 s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and (and s_0_2 s_1_2) s_2_2))
+                a!28
+                a!29))
+      (a!45 (or a!31
+                a!32
+                a!33
+                a!34
+                a!35
+                a!36
+                a!37
+                a!38
+                a!39
+                a!40
+                a!41
+                a!42
+                (and (and (and s_0_2 s_1_2) (not s_2_2))
+                     (and s_0_3 s_1_3)
+                     s_2_3)
+                a!43
+                a!44)))
+  (and true a!15 a!30 a!45)))
+SAT OR UNSAT: sat
+Shortest path exists for length 3
+
+************************************************
+In j1. Searching for state 3
+myStateFinalExpr: (and (not x_0) x_1 x_2)
+
+In j2. Searching at path length 0
+Searching for path length = 0
+
+In j2. Searching at path length 1
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and (not s_0_1) s_1_1 s_2_1)
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and s_0_1 s_1_1)
+                     s_2_1)
+                a!13
+                a!14)))
+  (and true a!15)))
+SAT OR UNSAT: sat
+Shortest path exists for length 1
+
+************************************************
+In j1. Searching for state 4
+myStateFinalExpr: (and x_0 (not x_1) (not x_2))
+
+In j2. Searching at path length 0
+Searching for path length = 0
+
+In j2. Searching at path length 1
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_1 (not s_1_1) (not s_2_1))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and s_0_1 s_1_1)
+                     s_2_1)
+                a!13
+                a!14)))
+  (and true a!15)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 1
+
+In j2. Searching at path length 2
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_2 (not s_1_2) (not s_2_2))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (not s_0_2) (not s_1_2))
+                 (not s_2_2)))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and s_0_2 s_1_2)
+                     s_2_2)
+                a!28
+                a!29)))
+  (and true a!15 a!30)))
+SAT OR UNSAT: sat
+Shortest path exists for length 2
+
+************************************************
+In j1. Searching for state 5
+myStateFinalExpr: (and x_0 (not x_1) x_2)
+
+In j2. Searching at path length 0
+Searching for path length = 0
+
+In j2. Searching at path length 1
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_1 (not s_1_1) s_2_1)
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and s_0_1 s_1_1)
+                     s_2_1)
+                a!13
+                a!14)))
+  (and true a!15)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 1
+
+In j2. Searching at path length 2
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_2 (not s_1_2) s_2_2)
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (not s_0_2) (not s_1_2))
+                 (not s_2_2)))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and s_0_2 s_1_2)
+                     s_2_2)
+                a!28
+                a!29)))
+  (and true a!15 a!30)))
+SAT OR UNSAT: sat
+Shortest path exists for length 2
+
+************************************************
+In j1. Searching for state 6
+myStateFinalExpr: (and x_0 x_1 (not x_2))
+
+In j2. Searching at path length 0
+Searching for path length = 0
+
+In j2. Searching at path length 1
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_1 s_1_1 (not s_2_1))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and s_0_1 s_1_1)
+                     s_2_1)
+                a!13
+                a!14)))
+  (and true a!15)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 1
+
+In j2. Searching at path length 2
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_2 s_1_2 (not s_2_2))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (not s_0_2) (not s_1_2))
+                 (not s_2_2)))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and s_0_2 s_1_2)
+                     s_2_2)
+                a!28
+                a!29)))
+  (and true a!15 a!30)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 2
+
+In j2. Searching at path length 3
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_3 s_1_3 (not s_2_3))
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+trr: 2 IS (let ((a!1 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!2 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!3 (and (and (not s_0_2) (not s_1_2))
+                s_2_2
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!4 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!5 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!6 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (not s_0_3) (not s_1_3))
+                (not s_2_3)))
+      (a!7 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!8 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!9 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!10 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!11 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!12 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!13 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!14 (and (and s_0_2 s_1_2)
+                 s_2_2
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_2 s_1_2) (not s_2_2)) (and s_0_3 s_1_3) s_2_3)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) (not s_2_2))))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and s_0_2 s_1_2) (not s_2_2))))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!31 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!32 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!33 (and (and (and (not s_0_2) (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!34 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!35 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!36 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (not s_0_3) (not s_1_3))
+                 (not s_2_3)))
+      (a!37 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!38 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!39 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!40 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!41 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!42 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!43 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!44 (and (and (and s_0_2 s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and (and s_0_2 s_1_2) s_2_2))
+                a!28
+                a!29))
+      (a!45 (or a!31
+                a!32
+                a!33
+                a!34
+                a!35
+                a!36
+                a!37
+                a!38
+                a!39
+                a!40
+                a!41
+                a!42
+                (and (and (and s_0_2 s_1_2) (not s_2_2))
+                     (and s_0_3 s_1_3)
+                     s_2_3)
+                a!43
+                a!44)))
+  (and true a!15 a!30 a!45)))
+SAT OR UNSAT: sat
+Shortest path exists for length 3
+
+************************************************
+In j1. Searching for state 7
+myStateFinalExpr: (and x_0 x_1 x_2)
+
+In j2. Searching at path length 0
+Searching for path length = 0
+
+In j2. Searching at path length 1
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_1 s_1_1 s_2_1)
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and s_0_1 s_1_1)
+                     s_2_1)
+                a!13
+                a!14)))
+  (and true a!15)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 1
+
+In j2. Searching at path length 2
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_2 s_1_2 s_2_2)
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (not s_0_2) (not s_1_2))
+                 (not s_2_2)))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and s_0_2 s_1_2)
+                     s_2_2)
+                a!28
+                a!29)))
+  (and true a!15 a!30)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 2
+
+In j2. Searching at path length 3
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_3 s_1_3 s_2_3)
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+trr: 2 IS (let ((a!1 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!2 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!3 (and (and (not s_0_2) (not s_1_2))
+                s_2_2
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!4 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!5 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!6 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (not s_0_3) (not s_1_3))
+                (not s_2_3)))
+      (a!7 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!8 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!9 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!10 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!11 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!12 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!13 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!14 (and (and s_0_2 s_1_2)
+                 s_2_2
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_2 s_1_2) (not s_2_2)) (and s_0_3 s_1_3) s_2_3)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) (not s_2_2))))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and s_0_2 s_1_2) (not s_2_2))))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!31 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!32 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!33 (and (and (and (not s_0_2) (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!34 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!35 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!36 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (not s_0_3) (not s_1_3))
+                 (not s_2_3)))
+      (a!37 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!38 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!39 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!40 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!41 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!42 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!43 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!44 (and (and (and s_0_2 s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and (and s_0_2 s_1_2) s_2_2))
+                a!28
+                a!29))
+      (a!45 (or a!31
+                a!32
+                a!33
+                a!34
+                a!35
+                a!36
+                a!37
+                a!38
+                a!39
+                a!40
+                a!41
+                a!42
+                (and (and (and s_0_2 s_1_2) (not s_2_2))
+                     (and s_0_3 s_1_3)
+                     s_2_3)
+                a!43
+                a!44)))
+  (and true a!15 a!30 a!45)))
+SAT OR UNSAT: unsat
+Shortest path does not exist for length 3
+
+In j2. Searching at path length 4
+Searching for path length > 0
+==. Check. myStateInitialExpr: (and (not s_0_0) (not s_1_0) s_2_0)
+==. Check. myStateFinalExprBelow: (and s_0_4 s_1_4 s_2_4)
+==. Check. T: 
+trr: 0 IS (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (not s_0_1) (not s_1_1))
+                (not s_2_1)))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and s_0_1 s_1_1)
+                 (not s_2_1)))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_0 s_1_0) (not s_2_0)) (and s_0_1 s_1_1) s_2_1)
+      a!13
+      a!14))
+trr: 1 IS (let ((a!1 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!2 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!3 (and (and (not s_0_1) (not s_1_1))
+                s_2_1
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!4 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!5 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!6 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                (and (not s_0_2) (not s_1_2))
+                (not s_2_2)))
+      (a!7 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!8 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!9 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!10 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!11 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and s_0_2 s_1_2)
+                 (not s_2_2)))
+      (a!12 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!13 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!14 (and (and s_0_1 s_1_1)
+                 s_2_1
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_1 s_1_1) (not s_2_1)) (and s_0_2 s_1_2) s_2_2)
+      a!13
+      a!14))
+trr: 2 IS (let ((a!1 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!2 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!3 (and (and (not s_0_2) (not s_1_2))
+                s_2_2
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!4 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!5 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!6 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                (and (not s_0_3) (not s_1_3))
+                (not s_2_3)))
+      (a!7 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!8 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!9 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!10 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!11 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and s_0_3 s_1_3)
+                 (not s_2_3)))
+      (a!12 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!13 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!14 (and (and s_0_2 s_1_2)
+                 s_2_2
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_2 s_1_2) (not s_2_2)) (and s_0_3 s_1_3) s_2_3)
+      a!13
+      a!14))
+trr: 3 IS (let ((a!1 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!2 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!3 (and (and (not s_0_3) (not s_1_3))
+                s_2_3
+                (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!4 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!5 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!6 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                (and (not s_0_4) (not s_1_4))
+                (not s_2_4)))
+      (a!7 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!8 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!9 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!10 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                 (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!11 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and s_0_4 s_1_4)
+                 (not s_2_4)))
+      (a!12 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!13 (and (and (and s_0_3 s_1_3) (not s_2_3))
+                 (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!14 (and (and s_0_3 s_1_3)
+                 s_2_3
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4)))))
+  (or a!1
+      a!2
+      a!3
+      a!4
+      a!5
+      a!6
+      a!7
+      a!8
+      a!9
+      a!10
+      a!11
+      a!12
+      (and (and (and s_0_3 s_1_3) (not s_2_3)) (and s_0_4 s_1_4) s_2_4)
+      a!13
+      a!14))
+tranTranTran: (let ((a!1 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!2 (and (and (and (not s_0_0) (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!3 (and (and (not s_0_0) (not s_1_0))
+                s_2_0
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!4 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!5 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!6 (and (and (and (not s_0_0) s_1_0) (not s_2_0))
+                (and (and (not s_0_1) (not s_1_1)) (not s_2_1))))
+      (a!7 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!8 (and (and (and (not s_0_0) s_1_0) s_2_0)
+                (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!9 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                (and (and (not s_0_1) s_1_1) (not s_2_1))))
+      (a!10 (and (and (and s_0_0 (not s_1_0)) (not s_2_0))
+                 (and (and s_0_1 (not s_1_1)) s_2_1)))
+      (a!11 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and s_0_1 s_1_1) (not s_2_1))))
+      (a!12 (and (and (and s_0_0 (not s_1_0)) s_2_0)
+                 (and (and (not s_0_1) s_1_1) s_2_1)))
+      (a!13 (and (and (and s_0_0 s_1_0) (not s_2_0))
+                 (and (and (not s_0_1) (not s_1_1)) s_2_1)))
+      (a!14 (and (and s_0_0 s_1_0)
+                 s_2_0
+                 (and (and s_0_1 (not s_1_1)) (not s_2_1))))
+      (a!16 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!17 (and (and (and (not s_0_1) (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!18 (and (and (and (not s_0_1) (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!19 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!20 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!21 (and (and (and (not s_0_1) s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) (not s_2_2))))
+      (a!22 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!23 (and (and (and (not s_0_1) s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!24 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and (not s_0_2) s_1_2) (not s_2_2))))
+      (a!25 (and (and (and s_0_1 (not s_1_1)) (not s_2_1))
+                 (and (and s_0_2 (not s_1_2)) s_2_2)))
+      (a!26 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and s_0_2 s_1_2) (not s_2_2))))
+      (a!27 (and (and (and s_0_1 (not s_1_1)) s_2_1)
+                 (and (and (not s_0_2) s_1_2) s_2_2)))
+      (a!28 (and (and (and s_0_1 s_1_1) (not s_2_1))
+                 (and (and (not s_0_2) (not s_1_2)) s_2_2)))
+      (a!29 (and (and (and s_0_1 s_1_1) s_2_1)
+                 (and (and s_0_2 (not s_1_2)) (not s_2_2))))
+      (a!31 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!32 (and (and (and (not s_0_2) (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!33 (and (and (and (not s_0_2) (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!34 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!35 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!36 (and (and (and (not s_0_2) s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) (not s_2_3))))
+      (a!37 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!38 (and (and (and (not s_0_2) s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!39 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and (not s_0_3) s_1_3) (not s_2_3))))
+      (a!40 (and (and (and s_0_2 (not s_1_2)) (not s_2_2))
+                 (and (and s_0_3 (not s_1_3)) s_2_3)))
+      (a!41 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and s_0_3 s_1_3) (not s_2_3))))
+      (a!42 (and (and (and s_0_2 (not s_1_2)) s_2_2)
+                 (and (and (not s_0_3) s_1_3) s_2_3)))
+      (a!43 (and (and (and s_0_2 s_1_2) (not s_2_2))
+                 (and (and (not s_0_3) (not s_1_3)) s_2_3)))
+      (a!44 (and (and (and s_0_2 s_1_2) s_2_2)
+                 (and (and s_0_3 (not s_1_3)) (not s_2_3))))
+      (a!46 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                 (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!47 (and (and (and (not s_0_3) (not s_1_3)) (not s_2_3))
+                 (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!48 (and (and (and (not s_0_3) (not s_1_3)) s_2_3)
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!49 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!50 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!51 (and (and (and (not s_0_3) s_1_3) (not s_2_3))
+                 (and (not s_0_4) (not s_1_4))
+                 (not s_2_4)))
+      (a!52 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4))))
+      (a!53 (and (and (and (not s_0_3) s_1_3) s_2_3)
+                 (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!54 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                 (and (and (not s_0_4) s_1_4) (not s_2_4))))
+      (a!55 (and (and (and s_0_3 (not s_1_3)) (not s_2_3))
+                 (and (and s_0_4 (not s_1_4)) s_2_4)))
+      (a!56 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and s_0_4 s_1_4)
+                 (not s_2_4)))
+      (a!57 (and (and (and s_0_3 (not s_1_3)) s_2_3)
+                 (and (and (not s_0_4) s_1_4) s_2_4)))
+      (a!58 (and (and (and s_0_3 s_1_3) (not s_2_3))
+                 (and (and (not s_0_4) (not s_1_4)) s_2_4)))
+      (a!59 (and (and (and s_0_3 s_1_3) s_2_3)
+                 (and (and s_0_4 (not s_1_4)) (not s_2_4)))))
+(let ((a!15 (or a!1
+                a!2
+                a!3
+                a!4
+                a!5
+                a!6
+                a!7
+                a!8
+                a!9
+                a!10
+                a!11
+                a!12
+                (and (and (and s_0_0 s_1_0) (not s_2_0))
+                     (and (and s_0_1 s_1_1) s_2_1))
+                a!13
+                a!14))
+      (a!30 (or a!16
+                a!17
+                a!18
+                a!19
+                a!20
+                a!21
+                a!22
+                a!23
+                a!24
+                a!25
+                a!26
+                a!27
+                (and (and (and s_0_1 s_1_1) (not s_2_1))
+                     (and (and s_0_2 s_1_2) s_2_2))
+                a!28
+                a!29))
+      (a!45 (or a!31
+                a!32
+                a!33
+                a!34
+                a!35
+                a!36
+                a!37
+                a!38
+                a!39
+                a!40
+                a!41
+                a!42
+                (and (and (and s_0_2 s_1_2) (not s_2_2))
+                     (and (and s_0_3 s_1_3) s_2_3))
+                a!43
+                a!44))
+      (a!60 (or a!46
+                a!47
+                a!48
+                a!49
+                a!50
+                a!51
+                a!52
+                a!53
+                a!54
+                a!55
+                a!56
+                a!57
+                (and (and (and s_0_3 s_1_3) (not s_2_3))
+                     (and s_0_4 s_1_4)
+                     s_2_4)
+                a!58
+                a!59)))
+  (and true a!15 a!30 a!45 a!60)))
+SAT OR UNSAT: sat
+Shortest path exists for length 4
+4
+3
+1
+2
+2
+3
+4
+
+
+What is this: 
+
+
+1
+2
+2
+3
+3
+4
+4
+theRechabilityeDiameter: 4
+
