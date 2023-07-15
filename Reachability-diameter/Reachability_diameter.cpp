@@ -199,7 +199,7 @@ int main(int argc, char **argv) {
 	return 0;
 }
 
-
+//calculateReachabilityDiameter
 void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation, expr_vector &myX, expr_vector &myY,
 		int maxBitRequired, std::map<int, expr> myMappingFromIntToExprForVertices, std::vector<int> myVectorOfAllVertices,
 		int myStateInitialInt, expr_vector &myStepwiseTransitionRelation, expr_vector &xES, expr_vector &yED) {
@@ -498,7 +498,7 @@ void f01_controlFunctionForReachability(std::string myFileName, std::vector<std:
 
 	return;
 }
-
+//read the Input File
 void f02_readTheInputFileAndGiveMeVectorOfVectors(std::string myFileName, std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors) {
 	std::ifstream myFileStream(myFileName);
 	int j1, j2;
@@ -515,7 +515,7 @@ fout << "digraph G1 {\n";
 	    myOneEdge.clear();
 	    
 	    fout << j1 << " -> " << j2 << ";\n";   //write data to the file student
-
+ 
 	    
 	}
 	fout << "}";
@@ -525,7 +525,7 @@ myFileStream.close();
 	return;
 }
 
-
+//sort vertices
 void f03_giveMeTheSortedvectorOfVertices(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::vector<int> *p2_theSortedVectorOfVertices) {
 	std::set<int> theSetOfVertices;
 
@@ -542,7 +542,7 @@ void f03_giveMeTheSortedvectorOfVertices(std::vector<std::vector<int> > *p1_theI
 
 	return;
 }
-
+//find max bit required 
 void f04_findNumberOfMaxBitrequired(std::vector<int> theSortedVectorOfVertices, int *theMaxBitrequired) {
 	int theLargestNumber = theSortedVectorOfVertices[theSortedVectorOfVertices.size() - 1];
 	int quo, counter = 0;
@@ -560,7 +560,7 @@ void f04_findNumberOfMaxBitrequired(std::vector<int> theSortedVectorOfVertices, 
 	return;
 }
 
-
+//Integer to binary for all vertices
 void f05_integerToBinaryForAllVertices(std::vector<int> *p2_theSortedVectorOfVertices, std::map<int, std::vector<int> > *p4_integerToBinaryForAllVertices, int *p3_theMaxBit, context *c, std::map<int, expr> &theVertexToItsBooleanExpression) {
 	std::cout << "\nIn f05";
 
@@ -637,7 +637,7 @@ void f06_decimalToBinary(int theDecimal, std::vector<int> *p1_theBinaryVector) {
 	return;
 }
 
-
+//Boolean expression
 void f07_createEdgeToBooleanExpression2(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors,
 		std::map<int, std::vector<int> > integerToBinaryForAllVertices, std::map<int, expr> &theVertexToItsBooleanExpression,
 		expr_vector &xES, expr_vector &yED, int *p3_theMaxBit, context *c, expr &theT, int givenInitialState) {
@@ -1030,7 +1030,7 @@ void f07_createEdgeToBooleanExpression1(std::vector<std::vector<int> > *p1_theIn
 }
 
 
-
+//create vertex to boolean expression
 void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::map<int, std::vector<int> > integerToBinaryForAllVertices, expr_vector xES, int *p3_theMaxBit, context *c, expr &theIorF, int iORf) {
 	//std::cout << "\nIn f08";
 	int k1/*, k2*/;

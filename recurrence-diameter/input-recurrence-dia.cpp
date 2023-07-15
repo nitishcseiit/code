@@ -104,7 +104,7 @@ int main(int argc, char **argv){
 		std::cout << "\nIn main:: " << *i1;
 	}
 */
-
+/*
 	std::cout << "\nPre-processing done. Z3 library starts now";
 
 	std::cout << "\nCheck theT: " << theT;
@@ -119,7 +119,7 @@ int main(int argc, char **argv){
 		std::cout << "\nIn above. theMaxBitrequired: " << theMaxBitrequired;
 
 
-
+*/
 	/*
 	 *
 	 *
@@ -127,7 +127,7 @@ int main(int argc, char **argv){
 	 *
 	 * */
 
-		std::cout << "\n\n\nHy111111111111111";
+/*		std::cout << "\n\n\nHy111111111111111";
 
 
 
@@ -159,15 +159,15 @@ int main(int argc, char **argv){
 	std::cout << "\n5555555555555555555555555";
 
 	std::cout << "\n::: " << theVertexToItsBooleanExpression.size();
-
+*/
 	//The graph
 	/*myTransitionRelationmyCGLASS = (not(myXGLASS[0]) && not(myXGLASS[1]) && not(myXGLASS[2]) && not(myYGLASS[0]) && not(myYGLASS[1]) && myYGLASS[2]) ||
 			(not(myXGLASS[0]) && not(myXGLASS[1]) && not(myXGLASS[2]) && not(myYGLASS[0]) && (myYGLASS[1]) && myYGLASS[2]) ||
 			(not(myXGLASS[0]) && not(myXGLASS[1]) && (myXGLASS[2]) && not(myYGLASS[0]) && (myYGLASS[1]) && not(myYGLASS[2])) ||
 			(not(myXGLASS[0]) && (myXGLASS[1]) && not(myXGLASS[2]) && not(myYGLASS[0]) && (myYGLASS[1]) && myYGLASS[2]);
 	*/
-	myTransitionRelationmyCGLASS = theT;
-	myMappingFromIntToExprForVerticesGLASS = theVertexToItsBooleanExpression;
+	//myTransitionRelationmyCGLASS = theT;
+	//myMappingFromIntToExprForVerticesGLASS = theVertexToItsBooleanExpression;
 
 	//myMappingFromIntToExprForVerticesGLASS.insert(std::pair<int, expr>(0, not(myXGLASS[0]) && not(myXGLASS[1]) && not(myXGLASS[2])));
 	//myMappingFromIntToExprForVerticesGLASS.insert(std::pair<int, expr>(1, not(myXGLASS[0]) && not(myXGLASS[1]) && (myXGLASS[2])));
@@ -179,21 +179,21 @@ int main(int argc, char **argv){
 	myMappingFromIntToExprForVerticesGLASS.insert(std::pair<int, expr>(7, (myXGLASS[0]) && (myXGLASS[1]) && (myXGLASS[2])));
 	*/
 
-	myStateInitialGLASS = givenInitialState;
+/*	myStateInitialGLASS = givenInitialState;
 
 	for(j1GLASS = 0; j1GLASS < *pp_nov; j1GLASS++) {
 		std::cout << "\nThis is a vertex: " << j1GLASS << ". pushed";
 		myVectorOfAllVerticesGLASS.push_back(j1GLASS);
 	}
 
-
+*/
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
-	f01_calculateReachabilityDiameter(c, myTransitionRelationmyCGLASS, myXGLASS, myYGLASS, maxBitRequiredGLASS, myMappingFromIntToExprForVerticesGLASS,
+/*	f01_calculateReachabilityDiameter(c, myTransitionRelationmyCGLASS, myXGLASS, myYGLASS, maxBitRequiredGLASS, myMappingFromIntToExprForVerticesGLASS,
 			myVectorOfAllVerticesGLASS, myStateInitialGLASS,myStepwiseTransitionRelationGLASS, xES, yED, theT);
-
+*/
 	////////////////// rajdeeep end
 	
-	
+	/*
 	expr_vector	x(c), y(c);
 
     	int N;
@@ -229,7 +229,7 @@ int main(int argc, char **argv){
 	std::cout << y << "\n\n";
 	//getchar();
 
-path=(!x[0]||x[0]); 
+path=(!x[0]||x[0]); */
 
 /*
       
@@ -243,7 +243,7 @@ path=(!x[0]||x[0]);
  */
  
  
-        expr compeq=c.bool_val(true);//=( (x[2]==y[2]) && (x[1]==y[1]) && (x[0]==y[0]));  
+   /*     expr compeq=c.bool_val(true);//=( (x[2]==y[2]) && (x[1]==y[1]) && (x[0]==y[0]));  
 
 
 
@@ -253,14 +253,19 @@ std::cout << "\n\n\n\n\n\nI need theT\n\n\n";
 expr T(c);
 T = theT;
 
+
+
+
  	std::cout << "\nGot theT: " << theT;
  	
- 	
+ 	*/
  
 	//expr I=(!x[2] && !x[1] && !x[0]); // initial state formula - 000
 	//expr I=(x[2] && !x[1] && !x[0]); // initial state formula - 100
 	//expr I=(!x[1] && x[0]); // initial state formula - 0
- 	expr I(c);//=(x[2] && !x[1] && !x[0]); // initial state formula - 100
+ 	
+ 	
+ 	/*expr I(c);//=(x[2] && !x[1] && !x[0]); // initial state formula - 100
  
 	std::cout << "\nThe I: \n";
 	std::cout << theIorF_I;
@@ -272,25 +277,30 @@ I = theIorF_I;
 	
 	std::cout << I;
 
+*/
 	//std::cout << "I is :" << I << "\n\n";
 	//std::cout << "T is :" << T << "\n\n";
         //return 0;
 	//getchar();
-
+/*
  	expr_vector	z(c);
 	for(unsigned i=0; i<N; ++i){
 		std::stringstream zName;
 		zName << "x_0_" << i;
 		z.push_back(c.bool_const(zName.str().c_str()));
 	}
-    	
-  //      path=(!x[0] || x[0]); 
+    	*/
+  path=(!x[0] || x[0]); 
 
 //	std::cout << "initiated path is :" << path << "\n\n";
  
 	//return 0;  
  
  
+ 
+ 
+ 
+ 	N = *p3_theMaxBit;
  
 int k=1; 
 int max_nodes=pow(2,N);
@@ -406,8 +416,7 @@ for (k=1;k <= max_nodes;k++){
 } //end of outer for loop with index k 
 			std::cout<<"\n\n Reached  max limit\n\n";
 
-
-        	        return 0; 
+	        return 0; 
 } //end of main 
 
 
@@ -717,13 +726,18 @@ void f01_controlFunctionForReachability(std::string myFileName, std::vector<std:
 */
 
 		f08_createVertexToBooleanExpression(p1_theInputFile_vectorOfVectors, integerToBinaryForAllVertices, xES, p3_theMaxBit, c, theIorF_I, givenInitialState);
+		
+		std::cout << "\n\nSTOP here";
+		std::cout << "\ntheT test: " << theT;
+		std::cout << "\nNeed I\n" << theIorF_I;
 	}
+	/*
 	else {
 		std::cout << "\nInput/output combination does not exist in the graph txt file";
 		std::cout << "\ngivenInitialState: " << givenInitialState;
 		std::cout << "\n\n";
 		exit(0);
-	}
+	}*/
 
 
 	return;
@@ -1106,9 +1120,10 @@ void f07_createEdgeToBooleanExpression2(std::vector<std::vector<int> > *p1_theIn
 			//std::cout << "\nTheT: " << theT;
 		}
 	}
-	std::cout << "\nAfter for loop. sizeOfTheAdjacencyListOfInitialState: " << sizeOfTheAdjacencyListOfInitialState;
+	std::cout << "I need this";
+	//std::cout << "\nAfter for loop. sizeOfTheAdjacencyListOfInitialState: " << sizeOfTheAdjacencyListOfInitialState;
 
-	std::cout << "\nOUTSIDE TheT: " << theT;
+	//std::cout << "\nOUTSIDE TheT: " << theT;
 
 	if(sizeOfTheAdjacencyListOfInitialState == -5) {
 		std::cout << "\nNo outgoing edge exists from the given initial state. So reachability diameter is 0 \n\n" << givenInitialState;
