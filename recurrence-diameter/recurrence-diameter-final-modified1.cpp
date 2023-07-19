@@ -370,7 +370,7 @@ for (k=1;k <= max_nodes;k++){
 		//getchar(); 
  
  
-//// meta logic below seems okay.  
+  
  
 
 	s.add(path && (!loop));
