@@ -335,7 +335,7 @@ for (k=1;k <= max_nodes;k++){
  
  
  
-// Todo: debug from below
+
 // implement equality checking 
 //
         loop=(!x[0] && x[0]);  //reset loop condition
@@ -493,7 +493,7 @@ void f02_readTheInputFileAndGiveMeVectorOfVectors(std::string myFileName, std::v
 
 	return;
 }
-//find Vertices
+//find Vertices of a graph
 
 void f03_giveMeTheSortedvectorOfVertices(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::vector<int> *p2_theSortedVectorOfVertices) {
 	std::set<int> theSetOfVertices;
@@ -511,7 +511,8 @@ void f03_giveMeTheSortedvectorOfVertices(std::vector<std::vector<int> > *p1_theI
 
 	return;
 }
-//findNumberOfMaxBitrequired
+//find Number Of Max Bitrequired
+//max bit is, How many bits are necessary to store a vertex? 
 void f04_findNumberOfMaxBitrequired(std::vector<int> theSortedVectorOfVertices, int *theMaxBitrequired) {
 	int theLargestNumber = theSortedVectorOfVertices[theSortedVectorOfVertices.size() - 1];
 	int quo, counter = 0;
@@ -529,7 +530,7 @@ void f04_findNumberOfMaxBitrequired(std::vector<int> theSortedVectorOfVertices, 
 	return;
 }
 
-
+// convert integer to binary
 void f05_integerToBinaryForAllVertices(std::vector<int> *p2_theSortedVectorOfVertices, std::map<int, std::vector<int> > *p4_integerToBinaryForAllVertices, int *p3_theMaxBit) {
 	//std::cout << "\nIn f05";
 
@@ -560,7 +561,8 @@ void f05_integerToBinaryForAllVertices(std::vector<int> *p2_theSortedVectorOfVer
 	return;
 }
 
-//decimalToBinary
+// vertex of graph  convert in  Binary format.
+
 void f06_decimalToBinary(int theDecimal, std::vector<int> *p1_theBinaryVector) {
 	int theNumber = theDecimal;
 	int rem;
@@ -821,7 +823,7 @@ void f07_createEdgeToBooleanExpression2(std::vector<std::vector<int> > *p1_theIn
 	return;
 }
 
-
+//this function use for find boolen expression of edge.
 
 void f07_createEdgeToBooleanExpression1(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::map<int, std::vector<int> > integerToBinaryForAllVertices, std::map<int, expr> &theVertexToItsBooleanExpression, expr_vector &xES, expr_vector &yED, int *p3_theMaxBit, context *c, expr &theT) {
 	std::cout << "\nIn f07-1";
@@ -949,7 +951,7 @@ void f07_createEdgeToBooleanExpression1(std::vector<std::vector<int> > *p1_theIn
 }
 
 
-//createVertexToBooleanExpression
+//create Vertex to Boolean expression
 void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::map<int, std::vector<int> > integerToBinaryForAllVertices, expr_vector xES, int *p3_theMaxBit, context *c, expr &theIorF, int iORf) {
 	//std::cout << "\nIn f08";
 	int k1/*, k2*/;
