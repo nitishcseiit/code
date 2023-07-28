@@ -44,8 +44,8 @@ bash Diameter.cpp <graph name>
 
 #### To compile 
 
-g++ filename -lz3
 
+g++ recurrence-diameter.cpp -lz3
 #### To execute
 ```SH 
 ./a.out <graph name> <initial-state>
