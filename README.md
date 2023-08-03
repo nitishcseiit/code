@@ -3,14 +3,16 @@
 
 # What does it contain?
 
-Given a Kripke structure, this repostory contains the code for Reachability diameter , Diameter, and Recurrence diameter. We have used z3 SAT-solver using the C++ interface to implement it.
+This repostory contains the code for computing Reachability diameter, Diameter, and Recurrence diameter of a given Kripke Structure. 
+The code uses Z3 SAT/SMT solver with the C++ interface. 
 
-## input format for the Kripke structure
+## Input format for the Kripke structure
 
-We consider the Kripkestructure as a directed graph G. The input for G is as below:
+We consider the Kripke structure as a directed graph G. 
+The input for G is as below:
 
-```sh
-u  v, where u is the source node and v is the destination node, and there exists an edge from u to v. An example of such graph is
+```
+sh u  v, where u is the source node and v is the destination node, and there exists an edge from u to v. An example of such graph is
 
 0 1
 1 2
