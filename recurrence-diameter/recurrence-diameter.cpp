@@ -1,3 +1,12 @@
+
+/*++
+Copyright (c) 
+Author:-Nitish Kumar,Prof.Ramchandra Phawde
+IIT Dharwad
+2023
+--*/
+
+--*/
 #include <iostream>
 #include <z3++.h>
 #include <fstream>
@@ -28,7 +37,7 @@ void f07_createEdgeToBooleanExpression1(std::vector<std::vector<int> > *p1_theIn
 void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::map<int,
 		std::vector<int> > integerToBinaryForAllVertices, expr_vector xES, int *p3_theMaxBit, context *c, expr &theIorF, int iORf);
 
-
+//main fuction
 int main(int argc, char **argv) {
 	context		c;
 	expr_vector	x(c), y(c);
@@ -182,7 +191,7 @@ std::vector<std::vector<int> > theInputFile_vectorOfVectors;
 	//givenInitialState = stoi(argv[2]);
 	givenFinalState = 0;
 
-
+//control function for the algorithm of reachability diameter
 	f01_controlFunctionForReachability(argv[1], p1_theInputFile_vectorOfVectors, p3_theMaxBit, theVertexToItsBooleanExpression, xES, yED, &c, theT, theIorF_I, theIorF_F, pp_nov, givenInitialState, givenFinalState);
 
 
@@ -397,7 +406,7 @@ for (k=1;k <= max_nodes;k++){
         	        return 0; 
 } //end of main 
 
-
+//control function for the algorithm of reachability diameter
 void f01_controlFunctionForReachability(std::string myFileName, std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, int *p3_theMaxBit, std::map<int, expr> &theVertexToItsBooleanExpression, expr_vector &xES, expr_vector &yED, context *c, expr &theT, expr &theIorF_I, expr &theIorF_F, int *pp_nov, int givenInitialState, int givenFinalState) {
 	std::vector<int> theSortedVectorOfVertices;
 	std::vector<int> *p2_theSortedVectorOfVertices;
@@ -493,7 +502,7 @@ void f02_readTheInputFileAndGiveMeVectorOfVectors(std::string myFileName, std::v
 
 	return;
 }
-//find Vertices of a graph
+//After reading the vertices from the input file, vertices need to be sorted. Vertices are integers. So this function uses STL method 'sort' to sort the list of integers.
 
 void f03_giveMeTheSortedvectorOfVertices(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::vector<int> *p2_theSortedVectorOfVertices) {
 	std::set<int> theSetOfVertices;
@@ -578,7 +587,7 @@ void f06_decimalToBinary(int theDecimal, std::vector<int> *p1_theBinaryVector) {
 	return;
 }
 
-//createEdgeToBooleanExpression
+//createEdgeToBooleanExpression: this function takes edges as input  and computes a boolean formula for the edges. The formula for computing the boolean formula is given in the thesis. 
 void f07_createEdgeToBooleanExpression2(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::map<int, std::vector<int> > integerToBinaryForAllVertices, std::map<int, expr> &theVertexToItsBooleanExpression, expr_vector &xES, expr_vector &yED, int *p3_theMaxBit, context *c, expr &theT) {
 	//std::cout << "\nIn f07-2";
 	int k1, k2;

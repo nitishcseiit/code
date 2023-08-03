@@ -9,23 +9,11 @@
 #include <map>
 #include <string>
 #include <sstream>
-
-
-
 #include <stdio.h>
-//#include <time.h>
 #include <stdlib.h>
 
 
 using namespace z3;
-
-/*
- * 0 -> 1              000 -> 001
- * 0 -> 3              000 -> 011
- * 1 -> 2              001 -> 010
- * 2 -> 3              010 -> 011
- */
-
 
 void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation, expr_vector &myX, expr_vector &myY,
 		int maxBitRequired, std::map<int, expr> myMappingFromIntToExprForVertices, std::vector<int> myVectorOfAllVertices,
