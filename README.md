@@ -11,8 +11,8 @@ The code uses Z3 SAT/SMT solver with the C++ interface.
 We consider the Kripke structure as a directed graph G. 
 The input for G is as below:
 
-```
-sh u  v, where u is the source node and v is the destination node, and there exists an edge from u to v. An example of such graph is
+```sh
+u  v, where u is the source node and v is the destination node, and there exists an edge from u to v. An example of such graph is
 
 0 1
 1 2
