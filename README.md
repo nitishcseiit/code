@@ -27,12 +27,17 @@ This indicate 0 -> 1 -> 2 -> 3
 
 #### To compile 
 
-g++ filename -lz3
+g++ Reachability_diameter.cpp -lz3
 
 #### To execute
 ```SH 
 ./a.out <graph name> <initial-state>
 ```
+For example:
+````SH
+./a.out graph1.txt 0
+````
+
 
 ## Diameter
 ### To execute 
