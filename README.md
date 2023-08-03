@@ -23,7 +23,7 @@ This indicate 0 -> 1 -> 2 -> 3
 
 
 ## Reachbility diameter
-### How to you run it?
+### How to run it?
 
 #### To compile 
 
@@ -42,7 +42,7 @@ bash Diameter.cpp <graph name>
 
 
 ## Recurrence diameter
-###  How to you run it?
+###  How to run it?
 
 #### To compile 
 
