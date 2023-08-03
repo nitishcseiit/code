@@ -19,7 +19,7 @@ An example of such graph is
 1 2
 2 3
 
-This indicate 0 -> 1 -> 2 -> 3
+This indicates edges  0 -> 1 -> 2 -> 3
 ```
 
 
