@@ -1,5 +1,7 @@
 #! /bin/bash
-
+# copyright(C)
+# Authors : Nitish Kumar
+#
 
 rm allD.txt
 touch allD.txt
