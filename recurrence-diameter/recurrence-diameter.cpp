@@ -1,7 +1,7 @@
 
 /*++
 Copyright (c) 
-Author:-Nitish Kumar,Prof.Ramchandra Phawde
+Author:-Nitish Kumar, Ramchandra Phawade
 IIT Dharwad
 2023
 --*/
