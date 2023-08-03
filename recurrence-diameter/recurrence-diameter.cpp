@@ -6,7 +6,6 @@ IIT Dharwad
 2023
 --*/
 
---*/
 #include <iostream>
 #include <z3++.h>
 #include <fstream>
