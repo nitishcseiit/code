@@ -1,6 +1,3 @@
-# code
-
-
 # What does it contain?
 
 This repostory contains the code for computing Reachability diameter, Diameter, and Recurrence diameter of a given Kripke Structure. 
@@ -42,7 +39,7 @@ For example:
 ## Diameter
 ### To execute 
 ```SH 
-bash Diameter.cpp <graph name>
+bash diameter.sh <graph name>
 ```
 
 
@@ -57,8 +54,4 @@ g++ recurrence-diameter.cpp -lz3
 ```SH 
 ./a.out <graph name> <initial-state>
 ```
-
-
-
-# An example
 
