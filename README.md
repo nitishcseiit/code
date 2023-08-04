@@ -28,7 +28,7 @@ This indicates edges  0 -> 1 -> 2 -> 3
 
 #### To compile 
 
-g++ Reachability_diameter.cpp -lz3
+g++ reachability_diameter.cpp -lz3
 
 #### To execute
 ```SH 
