@@ -69,6 +69,7 @@ for i in ${ARRAY[@]}; do echo $i; done
 
 #./a.out graph1.txt
 #g++ Diameter.cpp -lz3
+#call Diameter.cpp 
 g++ Diameter.cpp -lz3
 
 for i in ${B[@]}; 
