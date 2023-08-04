@@ -1,7 +1,7 @@
 #! /bin/bash
 # copyright(C)
 # Authors : Nitish Kumar
-#
+#IIT Dharwad 2023
 
 rm allD.txt
 touch allD.txt
@@ -35,7 +35,7 @@ do
 	echo ""
 done < $1
 
-
+#print all vertices
 
 printf '%s\n' "${theSetOfAllvertices[@]}"
 
@@ -67,10 +67,12 @@ ARRAY+=('bar')
 for i in ${ARRAY[@]}; do echo $i; done
 
 
-#./a.out graph1.txt
-#g++ Diameter.cpp -lz3
-#call Diameter.cpp 
-g++ Diameter.cpp -lz3
+
+#call diameter.cpp 
+
+g++ diameter.cpp -lz3
+
+#store output of diameter.cpp
 
 for i in ${B[@]}; 
 do 
@@ -97,7 +99,7 @@ for i in ${C[@]};
 do 
 	echo -e "\nTest: $i"; 
 done
-
+#find max 
 max=${C[0]}
 for n in "${C[@]}" ; do
     ((n > max)) && max=$n

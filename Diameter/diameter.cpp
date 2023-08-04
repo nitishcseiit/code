@@ -1,3 +1,9 @@
+/*++
+
+Author:-Nitish Kumar
+IIT Dharwad
+2023
+--*/
 #include <iostream>
 #include <z3++.h>
 #include <fstream>
@@ -41,7 +47,7 @@ void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theI
 
 
 
-
+//main function
 
 int main(int argc, char **argv) {
 	std::vector<std::vector<int> > theInputFile_vectorOfVectors;
@@ -196,7 +202,7 @@ int main(int argc, char **argv) {
 	return 0;
 }
 
-
+//calculateReachabilityDiameter: This function calculates the reachability diameter.
 void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation, expr_vector &myX, expr_vector &myY,
 		int maxBitRequired, std::map<int, expr> myMappingFromIntToExprForVertices, std::vector<int> myVectorOfAllVertices,
 		int myStateInitialInt, expr_vector &myStepwiseTransitionRelation, expr_vector &xES, expr_vector &yED) {
@@ -399,7 +405,7 @@ void f01_calculateReachabilityDiameter(context &myC, 	expr myTransitionRelation,
 	return ;//*(std::max_element(allShortestPathLength.begin(), allShortestPathLength.end()));
 }
 
-
+// This function calls the required function which are calculating the reachability diameter. This can be seen as driver function for the calculation of reachability diameter 
 
 void f01_controlFunctionForReachability(std::string myFileName, std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors,
 		int *p3_theMaxBit, std::map<int, expr> &theVertexToItsBooleanExpression, expr_vector &xES, expr_vector &yED,
@@ -504,6 +510,7 @@ void f01_controlFunctionForReachability(std::string myFileName, std::vector<std:
 
 	return;
 }
+//read the Input File
 
 void f02_readTheInputFileAndGiveMeVectorOfVectors(std::string myFileName, std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors) {
 	std::ifstream myFileStream(myFileName);
@@ -531,7 +538,7 @@ myFileStream.close();
 	return;
 }
 
-
+//After reading the vertices from the input file, vertices need to be sorted. Vertices are integers. So this function uses STL method 'sort' to sort the list of integers.
 void f03_giveMeTheSortedvectorOfVertices(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::vector<int> *p2_theSortedVectorOfVertices) {
 	std::set<int> theSetOfVertices;
 
@@ -548,7 +555,7 @@ void f03_giveMeTheSortedvectorOfVertices(std::vector<std::vector<int> > *p1_theI
 
 	return;
 }
-
+// Vertices are integers. We need to represent those vertices in binary. AFter representing those vertices in binary, the largest decimal number might contain the maximum number of bits required for binary representation. This function calculates the number of bits for that maximum number
 void f04_findNumberOfMaxBitrequired(std::vector<int> theSortedVectorOfVertices, int *theMaxBitrequired) {
 	int theLargestNumber = theSortedVectorOfVertices[theSortedVectorOfVertices.size() - 1];
 	int quo, counter = 0;
@@ -565,7 +572,7 @@ void f04_findNumberOfMaxBitrequired(std::vector<int> theSortedVectorOfVertices, 
 
 	return;
 }
-
+// This function calculates the binary for all the vertices. Vertices are treated as decimal number.
 
 void f05_integerToBinaryForAllVertices(std::vector<int> *p2_theSortedVectorOfVertices, std::map<int, std::vector<int> > *p4_integerToBinaryForAllVertices, int *p3_theMaxBit, context *c, std::map<int, expr> &theVertexToItsBooleanExpression) {
 	std::cout << "\nIn f05";
@@ -627,7 +634,7 @@ void f05_integerToBinaryForAllVertices(std::vector<int> *p2_theSortedVectorOfVer
 
 	return;
 }
-
+// Given a decimal number, this function calculates the equivalent binary number and returns is.
 void f06_decimalToBinary(int theDecimal, std::vector<int> *p1_theBinaryVector) {
 	int theNumber = theDecimal;
 	int rem;
@@ -643,7 +650,7 @@ void f06_decimalToBinary(int theDecimal, std::vector<int> *p1_theBinaryVector) {
 	return;
 }
 
-
+//Boolean expression: Given an egde, this function creates a boolean expression for it. The algorithm is mentioned in the thesis. Here we implement that algorithm. This boolean expression is required for z3 processing
 void f07_createEdgeToBooleanExpression2(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors,
 		std::map<int, std::vector<int> > integerToBinaryForAllVertices, std::map<int, expr> &theVertexToItsBooleanExpression,
 		expr_vector &xES, expr_vector &yED, int *p3_theMaxBit, context *c, expr &theT, int givenInitialState) {
@@ -909,7 +916,7 @@ void f07_createEdgeToBooleanExpression2(std::vector<std::vector<int> > *p1_theIn
 }
 
 
-
+// This is the updated version for the f07. Here we have improved our own implementaton. Our target was to make faster previous implementation.
 void f07_createEdgeToBooleanExpression1(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::map<int, std::vector<int> > integerToBinaryForAllVertices, std::map<int, expr> &theVertexToItsBooleanExpression, expr_vector &xES, expr_vector &yED, int *p3_theMaxBit, context *c, expr &theT) {
 	std::cout << "\nIn f07-1";
 	int k1, k2;
@@ -1037,6 +1044,7 @@ void f07_createEdgeToBooleanExpression1(std::vector<std::vector<int> > *p1_theIn
 
 
 
+//  Given a vertex, in integer notation, this function creates the equivalent boolean expression. ALgorithm is provided in thesis. We have implemented that exact algorithm here.
 void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::map<int, std::vector<int> > integerToBinaryForAllVertices, expr_vector xES, int *p3_theMaxBit, context *c, expr &theIorF, int iORf) {
 	//std::cout << "\nIn f08";
 	int k1/*, k2*/;

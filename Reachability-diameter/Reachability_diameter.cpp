@@ -1049,7 +1049,7 @@ void f07_createEdgeToBooleanExpression1(std::vector<std::vector<int> > *p1_theIn
 
 */
 
-//create vertex to boolean expression
+
 //  Given a vertex, in integer notation, this function creates the equivalent boolean expression. ALgorithm is provided in thesis. We have implemented that exact algorithm here.
 void f08_createVertexToBooleanExpression(std::vector<std::vector<int> > *p1_theInputFile_vectorOfVectors, std::map<int, std::vector<int> > integerToBinaryForAllVertices, expr_vector xES, int *p3_theMaxBit, context *c, expr &theIorF, int iORf) {
 	//std::cout << "\nIn f08";
